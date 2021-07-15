@@ -71,7 +71,8 @@ a:active {
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #3cc896;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  text-shadow: 0px 2px #3ca078;
   font-weight: 400;
   padding: 10px;
   border-radius: 16px;
@@ -79,12 +80,25 @@ a:active {
   transition: 0.2s opacity;
 }
 .button:visited {
-    color: #ffffff;
-  }
+  color: #ffffff;
+}
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 .button:active {
   background-color: #3ca078;
+}
+.button.contact {
+  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #006478;
+  text-shadow: 0px 0px #ffffff;
+  text-transform: lowercase;
+  border: 3px solid #3cc896;
+}
+.button.contact:hover {
+  background-color: #3cc896;
+  color: #ffffff;
 }
