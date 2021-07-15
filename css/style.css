@@ -2,6 +2,7 @@
 Colors used:
 Primary Color (Dark Teal): #006478;
 Secondary Color (Green): #3ca078;
+Secondary Color Shadow (Dark Green): #287850
 Alt Secondary on Dark BG (Green): #3cc896;
 Tertiary Color (Gold): #7e6529;
 Bonus Color (Beige): #ccbbb7;
@@ -31,13 +32,14 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 400;
   color: #7e6529;
 }
 
 h3 {
+  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 700;
   color: #3ca078;
 }
 
@@ -46,5 +48,43 @@ h4 {
   font-weight: 400;
 }
 image {
-    width: 100%;
+  width: 100%;
+}
+
+a {
+  color: #3cc896;
+  text-decoration: none; /* No underlining */
+}
+a:visited {
+  /* visited link */
+  color: darkmagenta;
+}
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active {
+  /* selected link */
+  color: #3ca078;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #3cc896;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 16px;
+  border-bottom: 2px solid #3ca078; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:visited {
+    color: #ffffff;
+  }
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:active {
+  background-color: #3ca078;
 }
