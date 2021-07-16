@@ -8,13 +8,13 @@ Tertiary Color (Gold): #7e6529;
 
 /* Layout styling */
 .container {
-    
+  padding: 0 15px;
 }
 
 /* Header */
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 /* Font */
 body {
@@ -61,9 +61,13 @@ h4 {
 
 /* Hero Section */
 .hero {
-    background-color: #ccbbb7;
-    padding: 10px;
-  }
+  background-color: #ccbbb7;
+  width: 100%;
+}
+
+.row {
+    margin 25px 0;
+}
 
 /* Image Width */
 image {
