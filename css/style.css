@@ -6,6 +6,16 @@ Link/Button Color (Green): #3cc896;
 Tertiary Color (Gold): #7e6529;
 */
 
+/* Layout styling */
+.container {
+    
+}
+
+/* Header */
+* {
+    box-sizing: border-box;
+  }
+
 /* Font */
 body {
   font-family: "acumin-pro", sans-serif;
@@ -48,6 +58,12 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
+/* Hero Section */
+.hero {
+    background-color: #ccbbb7;
+    padding: 10px;
+  }
 
 /* Image Width */
 image {
