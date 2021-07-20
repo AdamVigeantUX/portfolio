@@ -6,14 +6,23 @@ Link/Button Color (Green): #3cc896;
 Tertiary Color (Gold): #7e6529;
 */
 
+/* Header */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
 
-/* Header */
-* {
-  box-sizing: border-box;
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 /* Font */
@@ -59,19 +68,49 @@ h4 {
   font-weight: 400;
 }
 
-/* Hero Section */
-.hero {
-  background-color: #ccbbb7;
-  width: 100%;
-}
-
-.row {
-    margin: 25px 0;
+#hero h1 {
+  text-align: center; /* Centers text */
 }
 
 /* Image Width */
-image {
+img {
   width: 100%;
+}
+
+.logo {
+  max-width: 64px;
+  display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+    color: #4a4a4a;
+}
+/* Hero Section */
+.hero {
+  background-color: #ccbbb7;
+}
+
+.row {
+  margin: 25px 0;
 }
 
 /* Links */
