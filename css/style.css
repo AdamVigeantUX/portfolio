@@ -12,9 +12,11 @@ Tertiary Color (Gold): #7e6529;
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 10px 0;
   background-color: seashell;
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.5);
 }
 
 /* Layout styling */
@@ -76,7 +78,22 @@ h4 {
 
 #hero h1 {
   text-align: center; /* Centers text */
+  margin: 0.67em 0 0;
+}
+
+#hero p {
+  font-size: 1.75em;
+  color: #3ca078;
+  text-align: center; /* Centers text */
   margin: 0;
+  padding: 0;
+}
+
+#copyright {
+  font-size: .8em;
+  color: white;
+  background-color: #006478;
+  margin: 2em 0 0;
   padding: 0.67em 0;
 }
 
@@ -101,20 +118,17 @@ nav > ul {
 
 nav > ul > li {
   display: inline-block;
+  text-decoration-line: underline;
 }
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #006478;
 }
 nav > ul > li > a:visited {
-  color: #4a4a4a;
-}
-/* Hero Section */
-#hero {
-  background-color: #ccbbb7;
+  color: #006478;
 }
 
 /* Links */
@@ -166,9 +180,11 @@ a:active {
   display: inline-block;
   font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
   font-weight: 400;
+  text-transform: lowercase;
   background-color: #ffffff;
   color: #006478;
   text-shadow: 0px 0px #ffffff;
+  border-radius: 5px;
   border: 3px solid #3cc896;
 }
 
@@ -183,13 +199,13 @@ a:active {
 
 #linkedin {
   display: inline-block;
-  width: 64px;
   vertical-align: middle;
   padding: 10px;
 }
 
 #linkedin a,
 #linkedin svg {
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
 }
+
