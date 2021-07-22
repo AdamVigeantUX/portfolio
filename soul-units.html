@@ -13,32 +13,23 @@
   <body>
     <!-- Header -->
     <header>
-      <!-- Navigation -->
-      <div class="container">
-        <div class="logo">
-          <img src="img/logo/logo.svg" alt="AV Design Logo" width="32" />
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="files/cv.pdf" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
+      <div class="logo">
+        <img src="img/logo/logo.svg" alt="AV Design Logo" width="32"/>
       </div>
-    </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="files/cv.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+  </header>
 
     <!-- Hero Section -->
-    <div class="hero">
+    <div id="hero">
       <div class="container">
-        <div id="title">
-          <h1>
-            Soul Units<br />
-            <span> Your mood, energy, and daily activity manager </span>
-          </h1>
-        </div>
-        <div>
+        <div id="heroimg">
           <picture>
             <source
               srcset="img/project-soul-units/header-soul-units.png"
@@ -50,6 +41,12 @@
               width="600"
             />
           </picture>
+        </div>
+        <div id="title">
+          <h1>
+            Soul Units
+          </h1>
+          <p> Your mood, energy, and daily activity manager </p>
         </div>
       </div>
     </div>
@@ -277,13 +274,13 @@
     <footer id="contact">
       <div class="container">
         <h2>Talk to Me.</h2>
-        <p>You can reach me through email at:</p>
-        <div>
-          <a href="mailto:adamvigeantux@gmail.com" class="button contact"
-            >AdamVigeantUX@gmail.com.</a
-          >
+        <p>You can reach me through the following channels:</p>
+        <div class="button contact">
+          <a href="mailto:adamvigeantux@gmail.com">
+            E-mail Me
+            </a>
         </div>
-        <div>
+        <div id="linkedin">
           <a href="https://www.linkedin.com/in/adam-vigeant/" target="_blank">
             <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In  -->
             <svg
@@ -315,8 +312,8 @@
             </svg>
           </a>
         </div>
-        <p>Copyright Adam Vigeant 2021</p>
       </div>
+      <p id="copyright">&copy Adam Vigeant 2021</p>
     </footer>
   </body>
 </html>
