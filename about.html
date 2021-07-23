@@ -17,18 +17,21 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="logo">
-        <img src="img/logo/logo.svg" alt="AV Design Logo" width="32"/>
-      </div>
-      <nav>
+      <a href="index.html" id="logo">
+        <img src="img/logo/logo.svg" alt="AV Design Logo"/>
+      </a>
+      <nav id="links">
         <ul>
-          <li><a href="index.html">Work</a></li>
+          <li class="active"><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="files/cv.pdf" target="_blank">Resume</a></li>
+          <li><a href="files/cv.pdf" target="_blank">CV</a></li>
         </ul>
       </nav>
-  </header>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
 
     <!-- About -->
     <main id="about">
