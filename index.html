@@ -2,37 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://use.typekit.net/loa8egr.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adam Vigeant UX</title>
-    <link href="./img/av-design.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://use.typekit.net/loa8egr.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="./img/av-design.ico" rel="shortcut icon" />
+    <title>Adam Vigeant UX</title>
   </head>
 
   <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-          <img src="img/logo/logo.svg" alt="AV Design Logo" width="32"/>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="files/cv.pdf" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
+      <a href="index.html" id="logo">
+        <img src="img/logo/logo.svg" alt="AV Design Logo"/>
+      </a>
+      <nav id="links">
+        <ul>
+          <li class="active"><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="files/cv.pdf" target="_blank">CV</a></li>
+        </ul>
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </header>
 
     <!-- Hero Section -->
     <div id="hero">
       <div class="container">
-        <h1>
-          I'm Adam
-        </h1>
-        <p> —a UX designer. </p>
+        <h1>I'm Adam<span>—a UX designer.</span></h1>
       </div>
     </div>
 
@@ -44,8 +48,8 @@
           <h2>My Work</h2>
         </div>
         <!-- Project #1 -->
-        <div class="row" id="soulunits">
-          <div>
+        <div class="row">
+          <div class="col-md-6" id="soulunits">
             <picture>
               <a href="soul-units.html">
                 <source
@@ -56,15 +60,19 @@
               </a>
             </picture>
           </div>
-          <div>
-            <h3>Soul Units iOS App</h3>
-            <p>A self-awareness app brought to life through design thinking.</p>
-            <a href="soul-units.html" class="button"> View Project </a>
+          <div class="col-md-6">
+            <div>
+              <h3>Soul Units iOS App</h3>
+              <p>
+                A self-awareness app brought to life through design thinking.
+              </p>
+              <a href="soul-units.html" class="button"> View Project </a>
+            </div>
           </div>
         </div>
         <!-- Project #2 -->
-        <div class="row" id="studystructure">
-          <div>
+        <div class="row">
+          <div class="col-md-6" id="studystructure">
             <picture>
               <source
                 srcset="img/home/home-study-structure.png"
@@ -76,12 +84,15 @@
               />
             </picture>
           </div>
-          <div>
-            <h3>Study Structure App</h3>
-            <p>
-              How listening to students' needs inspired a new kind of study app.
-            </p>
-            <a href="#" class="button"> View Project </a>
+          <div class="col-md-6">
+            <div>
+              <h3>Study Structure App</h3>
+              <p>
+                How listening to students' needs inspired a new kind of study
+                app.
+              </p>
+              <a href="#" class="button"> View Project </a>
+            </div>
           </div>
         </div>
       </div>
@@ -93,9 +104,7 @@
         <h2>Talk to Me.</h2>
         <p>You can reach me through the following channels:</p>
         <div class="button contact">
-          <a href="mailto:adamvigeantux@gmail.com">
-            E-mail Me
-            </a>
+          <a href="mailto:adamvigeantux@gmail.com"> E-mail Me </a>
         </div>
         <div id="linkedin">
           <a href="https://www.linkedin.com/in/adam-vigeant/" target="_blank">
@@ -108,7 +117,7 @@
               y="0px"
               width="32px"
               height="32px"
-              viewBox="0 0 32 32"
+              viewbox="0 0 32 32"
               style="overflow: visible; enable-background: new 0 0 32 32"
               xml:space="preserve"
             >
@@ -132,5 +141,16 @@
       </div>
       <p id="copyright">&copy Adam Vigeant 2021</p>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
