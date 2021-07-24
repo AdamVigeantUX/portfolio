@@ -55,8 +55,9 @@ header {
   position: relative;
   width: 100%;
   text-align: center;
-  margin: 0 0 33px;
-  padding: 0;
+  margin: 0;
+  padding: 22px;
+  background-color: lightgray;
 }
 
 header a.icon {
@@ -64,6 +65,15 @@ header a.icon {
   position: fixed;
   right: 22px;
   top: 22px;
+  color: #006478;
+}
+
+header a.icon:active {
+  color: white;
+}
+
+header a.icon:hover {
+  color: white;
 }
 
 .active {
@@ -77,11 +87,11 @@ header a.icon {
 }
 
 #logo {
+  display: inline-block;
   position: relative;
   display: block;
   float: left;
   width: 32px;
-  margin: 22px;
 }
 
 nav {
@@ -92,12 +102,13 @@ nav {
   width: 50%;
   height: 100%;
   background-color: #006478;
-  border-radius: 10px;
-  padding: 22px;
+  border-radius: 10px 0 0 10px;
+  padding: 22px 10px;
 }
 
 nav > ul {
   list-style-type: none;
+  margin-top: 44px;
   padding: 0;
 }
 
@@ -164,6 +175,8 @@ h4 {
 
 #hero {
   text-align: center;
+  background-color: lightgray;
+  padding: 0 0 44px;
 }
 
 #hero h1 {
@@ -285,11 +298,8 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: unset;
-  }
-
-  .logo {
-    float: unset;
+    text-align: left;
+    vertical-align: middle;
   }
 
   body {
@@ -300,9 +310,65 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .col-md-6#headshot {
+    width: 33%;
+  }
+  .col-md-6#mystory {
+    width: 67%;
+  }
+
   [class*="col-"] {
     padding: 10px;
   }
+
+  #logo {
+    margin: 22px;
+  }
+
+  header a.icon {
+  display: none;
+}
+
+#links {
+  display: inline-block;
+}
+
+nav {
+  display: block;
+  position: relative;
+  float: left;
+  width: unset;
+  background-color: lightgray;
+  border-radius: 0;
+  padding: 0;
+}
+
+nav > ul {
+  margin: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  text-decoration-line: none;
+  margin: 22px;
+}
+
+nav > ul > li > a {
+  padding: 0 7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #006478;
+}
+
+nav > ul > li > a:visited {
+  color: #006478;
+}
+
+.active {
+  background-color: lightgray;
+  border-radius: 10px;
+  color: #006478;
+}
 }
 
 /* ==============================

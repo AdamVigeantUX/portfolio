@@ -18,18 +18,18 @@
     <!-- Header -->
     <header>
       <a href="index.html" id="logo">
-        <img src="img/logo/logo.svg" alt="AV Design Logo"/>
+        <img src="img/logo/logo.svg" alt="AV Design Logo" />
       </a>
       <nav id="links">
         <ul>
-          <li class="active"><a href="index.html">Work</a></li>
+          <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="files/cv.pdf" target="_blank">CV</a></li>
         </ul>
       </nav>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars fa-lg"></i>
       </a>
     </header>
 
@@ -50,10 +50,8 @@
           </picture>
         </div>
         <div id="title">
-          <h1>
-            Soul Units
-          </h1>
-          <p> Your mood, energy, and daily activity manager </p>
+          <h1>Soul Units</h1>
+          <p>Your mood, energy, and daily activity manager</p>
         </div>
       </div>
     </div>
@@ -69,8 +67,16 @@
             <li>Chapter 1| <strong>What's the Problem?</strong></li>
             <li>Chapter 2| <strong>Dream, Build, Rebuild</strong></li>
             <li>Chapter 3| <strong>Pass It On</strong></li>
-            <li><a href="https://www.youtube.com/embed/11k253OkyLQ"><strong>Demo Video</strong></a></li>
-            <li><a href="https://pjykwd.axshare.com/"><strong>Interactive Prototype</strong></a></li>
+            <li>
+              <a href="https://www.youtube.com/embed/11k253OkyLQ"
+                ><strong>Demo Video</strong></a
+              >
+            </li>
+            <li>
+              <a href="https://pjykwd.axshare.com/"
+                ><strong>Interactive Prototype</strong></a
+              >
+            </li>
             <li><strong>Epilogue| Always Learning</strong></li>
           </ul>
         </div>
@@ -283,9 +289,7 @@
         <h2>Talk to Me.</h2>
         <p>You can reach me through the following channels:</p>
         <div class="button contact">
-          <a href="mailto:adamvigeantux@gmail.com">
-            E-mail Me
-            </a>
+          <a href="mailto:adamvigeantux@gmail.com"> E-mail Me </a>
         </div>
         <div id="linkedin">
           <a href="https://www.linkedin.com/in/adam-vigeant/" target="_blank">
@@ -322,5 +326,16 @@
       </div>
       <p id="copyright">&copy Adam Vigeant 2021</p>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

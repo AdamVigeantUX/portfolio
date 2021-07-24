@@ -18,66 +18,69 @@
     <!-- Header -->
     <header>
       <a href="index.html" id="logo">
-        <img src="img/logo/logo.svg" alt="AV Design Logo"/>
+        <img src="img/logo/logo.svg" alt="AV Design Logo" />
       </a>
       <nav id="links">
         <ul>
-          <li class="active"><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Work</a></li>
+          <li class="active"><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="files/cv.pdf" target="_blank">CV</a></li>
         </ul>
       </nav>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars fa-lg"></i>
       </a>
     </header>
 
     <!-- About -->
     <main id="about">
       <div class="container">
-        <div>
           <h1>About</h1>
-        </div>
-        <picture>
-          <source srcset="img/about/headshot.png" media="(max-width:767px)" />
-          <img src="img/about/headshot.png" alt="Adam Vigeant" />
-        </picture>
-        <div>
-          <div id="mystory">
-            <h2>My Story</h2>
-            <p>
-              My goal is to live in a way that brings light and joy to the
-              people that surround me and the work that I do.
-            </p>
-            <p>
-              I love design because it lets me to enter the minds and hearts of
-              the people I work with to create a unique and beautiful finished
-              product.​​​​​​​
-            </p>
-            <a href="files/cv.pdf" target="_blank" class="button cv">
-              View CV
-            </a>
+        <div class="row">
+          <div class="col-md-6" id="headshot">
+            <picture>
+              <source
+                srcset="img/about/headshot.png"
+                media="(max-width:767px)"
+              />
+              <img src="img/about/headshot.png" alt="Adam Vigeant" />
+            </picture>
           </div>
-          <div id="skstls">
-            <h2>Skills & Tools</h2>
-            <div>
-              <div id="skills">
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>Skill #1</li>
-                  <li>Skill #2</li>
-                  <li>Skill #3</li>
-                </ul>
-              </div>
-              <div id="tools">
-                <h3>Tools I Use</h3>
-                <ul>
-                  <li>Tool #1</li>
-                  <li>Tool #2</li>
-                  <li>Tool #3</li>
-                </ul>
-              </div>
+            <div class="col-md-6" id="mystory">
+              <h2>My Story</h2>
+              <p>
+                My goal is to live in a way that brings light and joy to the
+                people that surround me and the work that I do.
+              </p>
+              <p>
+                I love design because it lets me to enter the minds and hearts
+                of the people I work with to create a unique and beautiful
+                finished product.​​​​​​​
+              </p>
+              <a href="files/cv.pdf" target="_blank" class="button cv">
+                View CV
+              </a>
+            </div>
+        </div>
+        <div id="skstls">
+          <h2>Skills & Tools</h2>
+          <div class="row">
+            <div class="col-md-6" id="skills">
+              <h3>Relevant Skills</h3>
+              <ul>
+                <li>Skill #1</li>
+                <li>Skill #2</li>
+                <li>Skill #3</li>
+              </ul>
+            </div>
+            <div class="col-md-6" id="tools">
+              <h3>Tools I Use</h3>
+              <ul>
+                <li>Tool #1</li>
+                <li>Tool #2</li>
+                <li>Tool #3</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -90,9 +93,7 @@
         <h2>Talk to Me.</h2>
         <p>You can reach me through the following channels:</p>
         <div class="button contact">
-          <a href="mailto:adamvigeantux@gmail.com">
-            E-mail Me
-            </a>
+          <a href="mailto:adamvigeantux@gmail.com"> E-mail Me </a>
         </div>
         <div id="linkedin">
           <a href="https://www.linkedin.com/in/adam-vigeant/" target="_blank">
@@ -129,5 +130,16 @@
       </div>
       <p id="copyright">&copy Adam Vigeant 2021</p>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
