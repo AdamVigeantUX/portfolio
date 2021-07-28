@@ -2,33 +2,77 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://use.typekit.net/loa8egr.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Soul Units</title>
-    <link href="./img/av-design.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://use.typekit.net/loa8egr.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="./img/av-design.ico" rel="shortcut icon" />
+    <title>Adam Vigeant UX</title>
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <div class="logo">
-        <img src="img/logo/logo.svg" alt="AV Design Logo" width="32"/>
-      </div>
-      <nav>
+      <a href="index.html" id="logo">
+        <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In  -->
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="35.8px"
+          height="64px"
+          viewbox="0 0 35.8 64"
+          style="overflow: visible; enable-background: new 0 0 35.8 64"
+          xml:space="preserve"
+        >
+          <defs></defs>
+          <g class="a-part">
+            <path
+              class="logo-a-color"
+              d="M35.8,29.6L18.1,0.1C18,0,17.8,0,17.7,0.1L0.1,29.6c-0.1,0.2,0,0.4,0.2,0.4h35.3C35.8,30,35.9,29.8,35.8,29.6z
+ "
+            />
+            <polygon
+              class="logo-eye-color"
+              points="21.5,21.9 14.3,21.9 17.9,15.9 	"
+            />
+          </g>
+          <g class="v-part">
+            <path
+              class="logo-v-color"
+              d="M35.8,34.4L18.1,63.9c-0.1,0.2-0.3,0.2-0.4,0L0.1,34.4c-0.1-0.2,0-0.4,0.2-0.4h8.9c0.2,0,0.3,0.1,0.4,0.3
+ l8.3,13.8l8.3-13.8c0.1-0.1,0.3-0.3,0.4-0.3h8.9C35.8,34,35.9,34.2,35.8,34.4z"
+            />
+          </g>
+        </svg>
+      </a>
+      <nav id="links">
         <ul>
-          <li><a href="index.html">Work</a></li>
+          <li class="active"><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="files/cv.pdf" target="_blank">Resume</a></li>
+          <li><a href="files/cv.pdf" target="_blank">CV</a></li>
         </ul>
       </nav>
-  </header>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars fa-lg"></i>
+      </a>
+    </header>
 
     <!-- Hero Section -->
     <div id="hero">
-      <div class="container">
+      <div>
+        <div id="title">
+          <h1>
+            Soul Units<span>Your mood, energy, and daily activity manager</span>
+          </h1>
+        </div>
         <div id="heroimg">
           <picture>
             <source
@@ -41,12 +85,6 @@
               width="600"
             />
           </picture>
-        </div>
-        <div id="title">
-          <h1>
-            Soul Units
-          </h1>
-          <p> Your mood, energy, and daily activity manager </p>
         </div>
       </div>
     </div>
@@ -62,8 +100,16 @@
             <li>Chapter 1| <strong>What's the Problem?</strong></li>
             <li>Chapter 2| <strong>Dream, Build, Rebuild</strong></li>
             <li>Chapter 3| <strong>Pass It On</strong></li>
-            <li><a href="https://www.youtube.com/embed/11k253OkyLQ"><strong>Demo Video</strong></a></li>
-            <li><a href="https://pjykwd.axshare.com/"><strong>Interactive Prototype</strong></a></li>
+            <li>
+              <a href="https://www.youtube.com/embed/11k253OkyLQ"
+                ><strong>Demo Video</strong></a
+              >
+            </li>
+            <li>
+              <a href="https://pjykwd.axshare.com/"
+                ><strong>Interactive Prototype</strong></a
+              >
+            </li>
             <li><strong>Epilogue| Always Learning</strong></li>
           </ul>
         </div>
@@ -276,9 +322,7 @@
         <h2>Talk to Me.</h2>
         <p>You can reach me through the following channels:</p>
         <div class="button contact">
-          <a href="mailto:adamvigeantux@gmail.com">
-            E-mail Me
-            </a>
+          <a href="mailto:adamvigeantux@gmail.com"> E-mail Me </a>
         </div>
         <div id="linkedin">
           <a href="https://www.linkedin.com/in/adam-vigeant/" target="_blank">
@@ -291,7 +335,7 @@
               y="0px"
               width="32px"
               height="32px"
-              viewBox="0 0 32 32"
+              viewbox="0 0 32 32"
               style="overflow: visible; enable-background: new 0 0 32 32"
               xml:space="preserve"
             >
@@ -315,5 +359,16 @@
       </div>
       <p id="copyright">&copy Adam Vigeant 2021</p>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>
