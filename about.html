@@ -18,7 +18,39 @@
     <!-- Header -->
     <header>
       <a href="index.html" id="logo">
-        <img src="img/logo/logo.svg" alt="AV Design Logo" />
+        <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In  -->
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="35.8px"
+          height="64px"
+          viewbox="0 0 35.8 64"
+          style="overflow: visible; enable-background: new 0 0 35.8 64"
+          xml:space="preserve"
+        >
+          <defs></defs>
+          <g class="a-part">
+            <path
+              class="logo-v-color"
+              d="M35.8,29.6L18.1,0.1C18,0,17.8,0,17.7,0.1L0.1,29.6c-0.1,0.2,0,0.4,0.2,0.4h35.3C35.8,30,35.9,29.8,35.8,29.6z
+ "
+            />
+            <polygon
+              class="logo-a-color"
+              points="21.5,21.9 14.3,21.9 17.9,15.9 	"
+            />
+          </g>
+          <g class="v-part">
+            <path
+              class="logo-v-color"
+              d="M35.8,34.4L18.1,63.9c-0.1,0.2-0.3,0.2-0.4,0L0.1,34.4c-0.1-0.2,0-0.4,0.2-0.4h8.9c0.2,0,0.3,0.1,0.4,0.3
+ l8.3,13.8l8.3-13.8c0.1-0.1,0.3-0.3,0.4-0.3h8.9C35.8,34,35.9,34.2,35.8,34.4z"
+            />
+          </g>
+        </svg>
       </a>
       <nav id="links">
         <ul>
@@ -36,9 +68,9 @@
     <!-- About -->
     <main id="about">
       <div class="container">
-          <h1>About</h1>
+        <h1>About</h1>
         <div class="row">
-          <div class="col-md-6" id="headshot">
+          <div class="column col-md-6" id="headshot">
             <picture>
               <source
                 srcset="img/about/headshot.png"
@@ -47,26 +79,26 @@
               <img src="img/about/headshot.png" alt="Adam Vigeant" />
             </picture>
           </div>
-            <div class="col-md-6" id="mystory">
-              <h2>My Story</h2>
-              <p>
-                My goal is to live in a way that brings light and joy to the
-                people that surround me and the work that I do.
-              </p>
-              <p>
-                I love design because it lets me to enter the minds and hearts
-                of the people I work with to create a unique and beautiful
-                finished product.​​​​​​​
-              </p>
-              <a href="files/cv.pdf" target="_blank" class="button cv">
-                View CV
-              </a>
-            </div>
+          <div class="column col-md-6" id="mystory">
+            <h2>My Story</h2>
+            <p>
+              My goal is to live in a way that brings light and joy to the
+              people that surround me and the work that I do.
+            </p>
+            <p>
+              I love design because it lets me to enter the minds and hearts of
+              the people I work with to create a unique and beautiful finished
+              product.​​​​​​​
+            </p>
+            <a href="files/cv.pdf" target="_blank" class="button cv">
+              View CV
+            </a>
+          </div>
         </div>
         <div id="skstls">
           <h2>Skills & Tools</h2>
           <div class="row">
-            <div class="col-md-6" id="skills">
+            <div class="column col-md-6" id="skills">
               <h3>Relevant Skills</h3>
               <ul>
                 <li>Skill #1</li>
@@ -74,7 +106,7 @@
                 <li>Skill #3</li>
               </ul>
             </div>
-            <div class="col-md-6" id="tools">
+            <div class="column col-md-6" id="tools">
               <h3>Tools I Use</h3>
               <ul>
                 <li>Tool #1</li>
@@ -134,10 +166,10 @@
     <script>
       function myFunction() {
         var x = document.getElementById("links");
-        if (x.style.display === "block") {
+        if (x.style.display === "flex") {
           x.style.display = "none";
         } else {
-          x.style.display = "block";
+          x.style.display = "flex";
         }
       }
     </script>

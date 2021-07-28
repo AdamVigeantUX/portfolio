@@ -24,6 +24,7 @@ Tertiary Color (Gold): #7e6529;
 
 [class*="col-"] {
   float: left;
+  width: 100%;
 }
 
 .container {
@@ -86,13 +87,13 @@ height: auto;
 
 /* Header */
 header {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   position: relative;
   width: 100%;
-  text-align: center;
   margin: 0;
-  padding: 22px;
-  background-color: lightgray;
+  background-color: #006478;
 }
 
 header a.icon {
@@ -100,7 +101,7 @@ header a.icon {
   position: fixed;
   right: 22px;
   top: 22px;
-  color: #006478;
+  color: white;
 }
 
 header a.icon:active {
@@ -117,16 +118,24 @@ header a.icon:hover {
   color: white;
 }
 
-#links {
-  display: none;
-}
-
 #logo {
   position: relative;
-  display: block;
-  float: left;
-  height: 64px;
+  display: flex;
+  justify-content: center;
+  width: 84px;
+  height: 100%;
   opacity: 100%;
+  padding: 22px 10px;
+  background-color: #006478;
+  border-radius: 100%;
+}
+
+.logo-a-color {
+  fill: #006478;
+}
+
+.logo-v-color {
+  fill: #3cc896;
 }
 
 @keyframes move-a {
@@ -148,8 +157,9 @@ header a.icon:hover {
 }
 
 nav {
-  display: block;
+  display: none;
   position: fixed;
+  justify-content: center;
   right: 0;
   top: 0;
   width: 50%;
@@ -168,6 +178,7 @@ nav > ul {
 nav > ul > li {
   display: block;
   text-decoration-line: none;
+  text-align: center;
   margin: 22px;
 }
 
@@ -206,6 +217,7 @@ h3 {
 h1 {
   font-size: 2.5em;
   color: #7e6529;
+  padding: 44px 0;
 }
 
 h2 {
@@ -228,7 +240,6 @@ h4 {
 #hero {
   text-align: center;
   background-color: lightgray;
-  padding: 0 0 44px;
 }
 
 #hero h1 {
@@ -349,12 +360,18 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: left;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
   }
 
   body {
     font-size: 24px;
+  }
+
+  .column {
+    padding: 10px;
   }
 
   .col-md-6 {
@@ -368,58 +385,48 @@ Medium devices (640px and larger)
     width: 67%;
   }
 
-  [class*="col-"] {
-    padding: 10px;
-  }
-
-  #logo {
-    margin: 22px;
-  }
-
 /* Change from Hamburger to Regular Nav */
   header a.icon {
   display: none;
 }
 
-#links {
-  display: inline-block;
-}
-
 nav {
-  display: block;
+  display: flex;
   position: relative;
-  float: left;
-  width: unset;
-  background-color: lightgray;
+  right: unset;
+  top: unset;
+  width: 80%;
+  justify-content: flex-end;
   border-radius: 0;
   padding: 0;
 }
 
 nav > ul {
+  display: flex;
   margin: 0;
+  padding: 0 22px 0 0;
 }
 
 nav > ul > li {
-  display: inline-block;
+  display: block;
   text-decoration-line: none;
-  margin: 22px;
+  margin: 10px 22px;
 }
 
 nav > ul > li > a {
-  padding: 0 7px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #006478;
+  color: white;
 }
 
 nav > ul > li > a:visited {
-  color: #006478;
+  color: white;
 }
 
 .active {
-  background-color: lightgray;
+  background-color: #3ca078;
   border-radius: 10px;
-  color: #006478;
+  padding: 5px 10px;
 }
 }
 
