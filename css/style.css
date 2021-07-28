@@ -49,6 +49,41 @@ img {
   width: 100%;
 }
 
+.berlin-illustration {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /* Header */
 header {
   overflow: hidden;
@@ -87,11 +122,29 @@ header a.icon:hover {
 }
 
 #logo {
-  display: inline-block;
   position: relative;
   display: block;
   float: left;
-  width: 32px;
+  height: 64px;
+  opacity: 100%;
+}
+
+@keyframes move-a {
+  from {transform: translate(0,-100px);}
+  to {transform: translate(0,0);}
+}
+
+@keyframes move-v {
+  from {transform: translate(0,100px);}
+  to {transform: translate(0,0);}
+}
+
+.a-part {
+  animation: .6s move-a 1 normal ease-out;
+}
+
+.v-part {
+  animation: .6s move-v 1 normal ease-out;
 }
 
 nav {
@@ -119,7 +172,6 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 7px;
   text-transform: uppercase;
   font-weight: 700;
   color: white;
@@ -217,7 +269,6 @@ a:visited {
 
 a:hover {
   opacity: 0.8;
-  text-decoration: underline;
 }
 
 a:active {
@@ -234,7 +285,7 @@ a:active {
   padding: 10px;
   border-radius: 2px;
   border-bottom: 2px solid #3ca078;
-  transition: 0.2s opacity;
+  transition: 300ms opacity;
 }
 
 .button:visited {
@@ -325,6 +376,7 @@ Medium devices (640px and larger)
     margin: 22px;
   }
 
+/* Change from Hamburger to Regular Nav */
   header a.icon {
   display: none;
 }
@@ -375,16 +427,17 @@ nav > ul > li > a:visited {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .col-lg-7 {
+    width: 58.33%;
+  }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-
-/* ==============================
-Extra-large devices (1920px or larger)
-================================= */
-@media only screen and (min-width: 1920px) {
+  .col-lg-5 {
+    width: 41.66%;
+  }
 }
