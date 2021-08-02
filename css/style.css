@@ -5,6 +5,9 @@ Secondary Color (Green): #3ca078;
 Link/Button Color (Green): #3cc896;
 Tertiary Color (Gold): #7e6529;
 */
+:root {
+  --main-color: #006478;
+}
 
 /* Contents
   General
@@ -63,25 +66,38 @@ img {
 /* Header */
 header {
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: center;
   overflow: hidden;
-  position: relative;
   width: 100%;
   margin: 0;
   background-color: lightgray;
 }
 
 /* Mobile Hamburger */
+#mobileSpacer {
+  margin-top: 64px;
+}
+
 header a.icon {
   display: block;
   position: fixed;
-  right: 22px;
-  top: 22px;
-  color: black;
+  right: 16px;
+  top: 14px;
+  color: gray;
 }
 
 header a.icon:active {
   color: white;
+}
+
+header a.icon > i.navClosed {
+  color: gray;
+}
+
+header a.icon > i.navOpened {
+  color: #00333e;
 }
 
 .active {
@@ -94,10 +110,13 @@ header a.icon:active {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 84px;
   height: 100%;
   opacity: 100%;
-  padding: 22px 10px;
+  padding: 10px 10px;
+}
+
+a#logo > svg {
+  height: 44px;
 }
 
 .logo-a-color {
@@ -420,11 +439,15 @@ Medium devices (640px and larger)
   }
 
   header {
-    display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 0 22px;
     background-color: #006478;
+  }
+
+  #mobileSpacer {
+    display: none;
   }
 
   #hero {
@@ -467,6 +490,14 @@ Medium devices (640px and larger)
     display: none;
   }
 
+  #logo {
+    padding: 22px 10px;
+  }
+
+  a#logo > svg {
+    height: 64px;
+  }
+
   .logo-a-color {
     fill: #3cc896;
   }
@@ -478,7 +509,7 @@ Medium devices (640px and larger)
   .logo-v-color {
     fill: #3cc896;
   }
-  
+
   nav {
     display: flex !important;
     position: relative;
