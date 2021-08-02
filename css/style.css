@@ -478,9 +478,9 @@ Medium devices (640px and larger)
   .logo-v-color {
     fill: #3cc896;
   }
-
+  
   nav {
-    display: flex;
+    display: flex !important;
     position: relative;
     right: unset;
     top: unset;
