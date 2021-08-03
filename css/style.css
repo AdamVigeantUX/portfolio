@@ -31,7 +31,7 @@ Tertiary Color (Gold): #7e6529;
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0;
   margin: 0;
 }
 
@@ -78,7 +78,7 @@ header {
 
 /* Mobile Hamburger */
 #mobileSpacer {
-  margin-top: 10%;
+  margin-top: 64px;
 }
 
 header a.icon {
@@ -197,7 +197,7 @@ nav > ul > li > a:visited {
 /* Font */
 body {
   font-family: "acumin-pro", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   color: black;
@@ -217,13 +217,14 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.75em;
   color: #7e6529;
   padding: 44px 0;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+  font-size: 1.67em;
   font-weight: 300;
   color: #7e6529;
   text-align: center;
@@ -254,12 +255,13 @@ p {
 
 #hero span {
   display: block;
+  font-weight: 600;
   font-size: 0.5em;
   line-height: 1.2em;
   color: #006478;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 #work {
@@ -286,15 +288,17 @@ p {
 }
 
 #project h2 {
-  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
-  font-weight: 800;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
   margin-top: 44px;
   padding-bottom: 22px;
 }
 
 h2 > span {
+  line-height: 2.5em;
   font-weight: 300;
-  font-size: 0.5em;
+  font-size: 0.67em;
   color: dimgray;
 }
 
@@ -462,11 +466,12 @@ Medium devices (640px and larger)
   }
 
   #project h2 {
+    font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
     font-size: 2em;
     margin-top: 44px;
     padding-bottom: 22px;
   }
-  
+
   h2 > span {
     font-size: .5em;
     color: dimgray;
@@ -590,6 +595,12 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #heroimg {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
