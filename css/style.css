@@ -267,32 +267,40 @@ p {
 }
 
 /* Projects */
-#contents::after {
+.section::after {
   content: "";
   clear: both;
   display: table;
 }
 
-#contents {
-  text-align: center;
-  padding-bottom: 25px;
+.section {
+  padding-bottom: 3em;
   border-bottom: 1px solid #4a4a4a;
 }
 
 #contents > ul {
+  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 #project h2 {
+  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+  font-weight: 800;
   margin-top: 44px;
   padding-bottom: 22px;
 }
 
 h2 > span {
+  font-weight: 300;
   font-size: 0.5em;
   color: dimgray;
+}
+
+#project h3 {
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 #demoVid {
@@ -368,8 +376,10 @@ a:active {
 
 /* Footer */
 
-#contact {
+footer {
+  display: block;
   text-align: center;
+  width: 100%;
   background-color: lightgray;
 }
 
@@ -393,6 +403,7 @@ a:active {
 
 #copyright {
   font-size: 0.8em;
+  text-align: center;
   color: white;
   background-color: #006478;
   margin: 2em 0 0;
@@ -450,6 +461,17 @@ Medium devices (640px and larger)
     padding: 0 44px;
   }
 
+  #project h2 {
+    font-size: 2em;
+    margin-top: 44px;
+    padding-bottom: 22px;
+  }
+  
+  h2 > span {
+    font-size: .5em;
+    color: dimgray;
+  }
+
   header {
     position: relative;
     align-items: center;
@@ -488,6 +510,10 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 
   .col-md-6#headshot {
