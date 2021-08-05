@@ -78,7 +78,7 @@ header {
   overflow: hidden;
   width: 100%;
   margin: 0;
-  background-color: lightgray;
+  background-color: var(--main-color);
 }
 
 /* Mobile Hamburger */
@@ -91,7 +91,7 @@ header a.icon {
   position: fixed;
   right: 16px;
   top: 14px;
-  color: gray;
+  color: lightgray;
 }
 
 header a.icon:active {
@@ -99,7 +99,7 @@ header a.icon:active {
 }
 
 header a.icon > i.navClosed {
-  color: gray;
+  color: lightgray;
 }
 
 header a.icon > i.navOpened {
@@ -126,6 +126,18 @@ a#logo > svg {
 }
 
 .logo-a-color {
+  fill: #3cc896;
+}
+
+.logo-eye-color {
+  fill: #006478;
+}
+
+.logo-v-color {
+  fill: #3cc896;
+}
+
+/* .logo-a-color {
   fill: #006478;
 }
 
@@ -135,7 +147,7 @@ a#logo > svg {
 
 .logo-v-color {
   fill: #3cc896;
-}
+} */
 
 @keyframes move-a {
   from {
@@ -171,7 +183,7 @@ nav {
   top: 0;
   width: 50%;
   height: 100%;
-  background-color: #006478;
+  background-color: #005161;
   border-radius: 10px 0 0 10px;
   padding: 22px 10px;
 }
@@ -279,6 +291,16 @@ p {
 
 #work {
   text-align: center;
+}
+
+#work h3 {
+  font-size: 1.5em;
+  padding: .5em 0;
+}
+
+#work h2 {
+  text-align: left;
+  padding: 0 0 1em;
 }
 
 /* Projects */
@@ -599,9 +621,9 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  #hero {
+/*   #hero {
     background-color: lightgray;
-  }
+  } */
 
   #heroImg {
     padding: 22px 10px;
@@ -613,10 +635,11 @@ Medium devices (640px and larger)
 
   #work h3 {
     font-size: 1.67em;
+    padding-top: 0;
   }
 
   #work p {
-    font-size: 30px;
+    font-size: 1.25em;
   }
 
   .col-md-6 {
@@ -647,7 +670,7 @@ Medium devices (640px and larger)
     height: 64px;
   }
 
-  .logo-a-color {
+ /*  .logo-a-color {
     fill: #3cc896;
   }
 
@@ -657,7 +680,7 @@ Medium devices (640px and larger)
 
   .logo-v-color {
     fill: #3cc896;
-  }
+  } */
 
   nav {
     display: flex !important;
@@ -668,6 +691,7 @@ Medium devices (640px and larger)
     justify-content: flex-end;
     border-radius: 0;
     padding: 0;
+    background-color: #006478;
   }
 
   nav > ul {
