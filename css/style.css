@@ -23,24 +23,29 @@ Tertiary Color (Gold): #7e6529;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 [class*="col-"] {
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   width: 100%;
 }
 
 .container {
-  padding: 0;
+  padding: 0 15px;
   margin: 0;
 }
 
-#project {
-  padding: 15px;
-}
-
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 2em;
 }
 
 .row::after {
@@ -171,6 +176,11 @@ nav {
   padding: 22px 10px;
 }
 
+main ul {
+  margin-left: 2em;
+  margin-right: auto;
+}
+
 nav > ul {
   list-style-type: none;
   margin-top: 44px;
@@ -207,7 +217,9 @@ h1,
 h2,
 h3,
 h4 {
+  width: 100%;
   line-height: 1.2;
+  padding: 0.5em 0;
 }
 
 h1,
@@ -233,7 +245,7 @@ h2 {
 h3 {
   font-size: 1.25em;
   color: #006478;
-  margin: 0.5em 0;
+  padding: 1em 0;
 }
 
 h4 {
@@ -242,7 +254,9 @@ h4 {
 }
 
 p {
-  margin: 0.5em 0 1em;
+  display: inline-block;
+  margin-right: auto;
+  padding-bottom: 1em;
 }
 
 #hero {
@@ -260,8 +274,7 @@ p {
   line-height: 1.2em;
   color: #006478;
   text-align: center;
-  margin: 0;
-  padding: 0 10px;
+  padding: 0 1em;
 }
 
 #work {
@@ -269,8 +282,18 @@ p {
 }
 
 /* Projects */
+main#project {
+  padding-bottom: 0;
+}
+
 #heroImg {
   padding: 0 10px;
+}
+
+.section {
+  flex-direction: column;
+  padding-bottom: 5em;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 .section::after {
@@ -279,28 +302,43 @@ p {
   display: table;
 }
 
-.section {
-  padding-bottom: 3em;
-  border-bottom: 1px solid #4a4a4a;
+.capFirst {
+  font-size: 1.25em;
 }
 
-#contents > ul {
-  text-align: center;
+#contents ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  text-align: center;
+}
+
+#tools p {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #project h2 {
   font-family: "acumin-pro", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  margin-top: 44px;
-  padding-bottom: 22px;
+  padding: 2em 0em 1em;
 }
 
-#contents h2 {
-  padding: 0;
+.section h3 {
+  padding-top: 0;
+}
+
+#project #userTests .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#project #userTests p {
+  width: 80%;
+  margin-left: auto;
 }
 
 h2 > span {
@@ -329,7 +367,13 @@ h2 > span {
 }
 
 #project img {
-  padding: 0 5%;
+  padding: 1em;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.projGif picture img {
+  width: 200px;
 }
 
 #demoVid {
@@ -388,10 +432,10 @@ a:active {
   background-color: #3ca078;
 }
 
-.button.contact {
+#contact .button {
   display: inline-block;
   font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: lowercase;
   background-color: #ffffff;
   text-shadow: 0px 0px #ffffff;
@@ -405,13 +449,13 @@ a:active {
 
 li a.listButton1 {
   font-family: "acumin-pro", sans-serif;
-  margin: .8em;
+  margin: 0.8em;
   padding: 8px 16px;
 }
 
 li a.listButton2 {
   font-family: "acumin-pro", sans-serif;
-  margin: 0 .8em .8em;
+  margin: 0 0.8em 0.8em;
   padding: 8px 16px;
 }
 
@@ -430,13 +474,16 @@ footer {
   padding: 33px 0 11px;
 }
 
+#contact p {
+  width: 100%;
+}
+
 #linkedin {
   display: inline-block;
   vertical-align: middle;
   padding: 10px;
 }
 
-#linkedin a,
 #linkedin svg {
   width: 48px;
   height: 48px;
@@ -444,11 +491,16 @@ footer {
 
 #copyright {
   font-size: 0.8em;
-  text-align: center;
-  color: white;
   background-color: #006478;
-  margin: 2em 0 0;
-  padding: 0.67em 0;
+  margin: 0;
+  padding: .5em 0;
+}
+
+#copyright p {
+  font-size: 0.8em;
+  margin: 0 auto;
+  color: white;
+  padding: 0;
 }
 
 /* Animation Example */
@@ -498,11 +550,15 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  
+  .column {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
   body {
     font-size: 20px;
   }
-  
+
   #project > div {
     padding: 0 44px;
   }
@@ -510,17 +566,25 @@ Medium devices (640px and larger)
   #project h2 {
     font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
     font-size: 2em;
-    margin-top: 44px;
-    padding-bottom: 22px;
+    margin: 0;
   }
 
   h2 > span {
-    font-size: .5em;
+    font-size: 0.5em;
     color: dimgray;
   }
 
   #project h3 {
     text-align: center;
+  }
+
+  #project #userTests p {
+    width: 80%;
+    margin-left: 20%;
+  }
+
+  #project .projGif {
+    justify-content: flex-start;
   }
 
   header {
@@ -553,10 +617,6 @@ Medium devices (640px and larger)
 
   #work p {
     font-size: 30px;
-  }
-
-  .column {
-    padding: 10px;
   }
 
   .col-md-6 {
@@ -636,26 +696,23 @@ Medium devices (640px and larger)
   }
 
   div.projectFlex#hero > .row {
-    display: flex;
     align-items: center;
-    margin: 0 5%;
+    padding: 0 5%;
   }
 
   #project img {
     padding: 0 0;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  
   body {
     font-size: 24px;
   }
-  
+
   .container {
     max-width: 1200px;
     margin-left: auto;

@@ -96,7 +96,7 @@
     <main id="project">
       <div class="container">
         <!-- Table of Contents -->
-        <div class="section" id="contents">
+        <div class="section row" id="contents">
           <h2>Case Study Contents</h2>
           <ul>
             <li>Foreword| <strong>Project Overview</strong></li>
@@ -104,7 +104,9 @@
             <li>Chapter 2| <strong>Dream, Build, Rebuild</strong></li>
             <li>Chapter 3| <strong>Pass It On</strong></li>
             <li>
-              <a class="button listButton1" href="https://www.youtube.com/embed/11k253OkyLQ"
+              <a
+                class="button listButton1"
+                href="https://www.youtube.com/embed/11k253OkyLQ"
                 ><strong>Demo Video</strong></a
               >
             </li>
@@ -153,24 +155,23 @@
                 User Testing, UI Design, and Design Documentation.
               </p>
             </div>
-            <div class="column col-md-6">
+            <div class="column col-md-6" id="tools">
               <h3>Tools</h3>
-              <p>
-                <strong>Design| </strong><br />Adobe Illustrator • Adobe
-                Photoshop
-                <br />
-                <strong>Prototyping| </strong><br />Adobe XD • Axure • Invision
-                • Balsamiq<br />
-                <strong>Research & Testing|</strong> <br />Zoom • Google
-                Workspace​​​​​​​
+              <p class="toolsSection">
+                <strong>Design|</strong>
               </p>
+              <p>Adobe Illustrator • Adobe Photoshop</p>
+              <p class="toolsSection"><strong>Prototyping|</strong></p>
+              <p>Adobe XD • Axure • Invision • Balsamiq</p>
+              <p class="toolsSection"><strong>Research & Testing|</strong></p>
+              <p>Zoom • Google Workspace​​​​​​​</p>
             </div>
           </div>
         </div>
         <!-- Chapter 1| What's the Problem? -->
         <div class="section">
           <!-- Heading -->
-          <div class="column col-md-12" id="ch1">
+          <div class="row" id="ch1">
             <h2>
               <span>Chapter 1</span><br />
               What's the Problem?<br />
@@ -178,11 +179,9 @@
             </h2>
           </div>
           <!-- Section Content -->
-          <div>
-            <div>
               <div class="row">
                 <div class="column col-md-6">
-                  <p>
+                  <p class="capFirst">
                     Soul Units began with a very open-ended request:
                     <strong
                       >create a mental and emotional health tool for 25-34 year
@@ -237,7 +236,7 @@
                   </p>
                 </div>
               </div>
-              <div class="column col-md-12">
+              <div class="row">
                 <p>
                   The insights gleaned from research were then compiled into a
                   set of <b>DESIGN PERSONAS</b> to provide vision, empathy, and
@@ -302,7 +301,7 @@
                   </picture>
                 </div>
               </div>
-              <div class="column col-md-12">
+              <div class="row">
                 <p>
                   To think through how to navigate through these tasks, I
                   created
@@ -337,12 +336,11 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          
         <!-- Chapter 2| Dream, Build, Rebuild -->
         <div class="section">
           <!-- Heading -->
-          <div class="column col-md-12" id="ch2">
+          <div class="row" id="ch2">
             <h2>
               <span>Chapter 2</span><br />
               Dream, Build, Rebuild<br />
@@ -351,8 +349,8 @@
           </div>
           <!-- Section Content -->
           <div>
-            <div class="column col-md-12">
-              <p>
+            <div class="row">
+              <p class="capFirst">
                 <strong
                   >Once I had an understanding of the people who would use Soul
                   Units and what they needed the app to do,</strong
@@ -381,7 +379,7 @@
                 </picture>
               </div>
             </div>
-            <div class="column col-md-12">
+            <div class="row">
               <p>
                 Wireframes were further developed into a
                 <b>MID-FIDELITY PROTOTYPE</b> with the purpose of testing with
@@ -393,44 +391,50 @@
                 <b>REMOTE USABILITY TEST</b>.
               </p>
             </div>
-            <div id="userTests">
+            <div class="row" id="userTests">
               <h3>During the tests, participants were asked to:</h3>
               <div class="row">
                 <div class="column col-md-6">
-                  <p><strong>Track their energy and mood,...</strong></p>
+                  <p><strong>Track their energy and mood,</strong></p>
                 </div>
-                <div class="column col-md-6">
-                  <picture>
-                    <source
-                      srcset="https://via.placeholder.com/300"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      src="https://via.placeholder.com/300"
-                      alt="Picture"
-                      width="300"
-                    />
-                  </picture>
+                <div class="column col-md-6 projGif">
+                  <div>
+                    <picture>
+                      <source
+                        srcset="img/project-soul-units/gifs/entry.gif"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/gifs/entry.gif"
+                        alt="Picture"
+                        width="100"
+                      />
+                    </picture>
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="column col-md-6">
                   <p>
-                    <strong>...add activities to a to-do list,...</strong>
+                    <strong>add activities to a to-do list,</strong>
                   </p>
                 </div>
-                <div class="column col-md-6">
-                  <picture>
-                    <source
-                      srcset="https://via.placeholder.com/300"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      src="https://via.placeholder.com/300"
-                      alt="Picture"
-                      width="300"
-                    />
-                  </picture>
+                <div class="column col-md-6 projGif">
+                  <div>
+                    <picture>
+                      <source
+                        srcset="
+                          img/project-soul-units/gifs/adding-activities_k.gif
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/gifs/adding-activities_k.gif"
+                        alt="Picture"
+                        width="100"
+                      />
+                    </picture>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -442,22 +446,26 @@
                     >
                   </p>
                 </div>
-                <div class="column col-md-6">
-                  <picture>
-                    <source
-                      srcset="https://via.placeholder.com/300"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      src="https://via.placeholder.com/300"
-                      alt="Picture"
-                      width="300"
-                    />
-                  </picture>
+                <div class="column col-md-6 projGif">
+                  <div>
+                    <picture>
+                      <source
+                        srcset="
+                          img/project-soul-units/gifs/check-off-activity.gif
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/gifs/check-off-activity.gif"
+                        alt="Picture"
+                        width="100"
+                      />
+                    </picture>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="column col-md-12">
+            <div class="row">
               <p>
                 Once testing was complete I compiled the results into a
                 <b>RAINBOW SPREADSHEET</b> and analyzed them using
@@ -466,7 +474,7 @@
                 >.
               </p>
             </div>
-            <div class="column col-md-12">
+            <div class="row">
               <h4>Several small issues were identified:</h4>
               <ul>
                 <li>
@@ -478,6 +486,8 @@
                 </li>
                 <li>"Energy" and "Mood" were initially lumped together</li>
               </ul>
+            </div>
+            <div class="row">
               <h4>More serious issues also came to light:</h4>
               <ul>
                 <li>
@@ -488,7 +498,7 @@
               </ul>
             </div>
             <div id="biggestFinding">
-              <div class="column col-md-12">
+              <div class="row">
                 <h4>But the most crucial discovery:</h4>
                 <ul>
                   <li>
@@ -516,11 +526,13 @@
                 <div class="column col-md-6">
                   <picture>
                     <source
-                      srcset="https://via.placeholder.com/300"
+                      srcset="
+                        img/project-soul-units/gifs/check-off-activity-deplete.gif
+                      "
                       media="(max-width:767px)"
                     />
                     <img
-                      src="https://via.placeholder.com/300"
+                      src="img/project-soul-units/gifs/check-off-activity-deplete.gif"
                       alt="Picture"
                       width="300"
                     />
@@ -540,18 +552,18 @@
               <div class="column col-md-6">
                 <picture>
                   <source
-                    srcset="https://via.placeholder.com/300"
+                    srcset="img/project-soul-units/iteration.png"
                     media="(max-width:767px)"
                   />
                   <img
-                    src="https://via.placeholder.com/300"
+                    src="img/project-soul-units/iteration.png"
                     alt="Picture"
                     width="300"
                   />
                 </picture>
               </div>
             </div>
-            <div class="column col-md-12">
+            <div class="row">
               <p>
                 <strong>After several iterations and a series of tests</strong>,
                 usability issues were resolved, and the overall feel of the app
@@ -572,7 +584,7 @@
         <!-- Chapter 3| Pass It On -->
         <div class="section">
           <!-- Heading -->
-          <div class="column col-md-12" id="ch3">
+          <div class="row" id="ch3">
             <h2>
               <span>Chapter 3</span><br />
               Pass It On<br />
@@ -582,8 +594,8 @@
           <!-- Section Content -->
           <div>
             <div>
-              <div class="column col-md-12">
-                <p>
+              <div class="row">
+                <p class="capFirst">
                   The time for final refinement of the
                   <b>USER INTERFACE DESIGN</b> had come, and
                   <strong
@@ -604,11 +616,11 @@
                 <div class="column col-md-6">
                   <picture>
                     <source
-                      srcset="https://via.placeholder.com/300"
+                      srcset="img/project-soul-units/design-updates.png"
                       media="(max-width:767px)"
                     />
                     <img
-                      src="https://via.placeholder.com/300"
+                      src="img/project-soul-units/design-updates.png"
                       alt="Picture"
                       width="300"
                     />
@@ -643,11 +655,11 @@
                 <div class="column col-md-6">
                   <picture>
                     <source
-                      srcset="https://via.placeholder.com/300"
+                      srcset="img/project-soul-units/design-language-system.png"
                       media="(max-width:767px)"
                     />
                     <img
-                      src="https://via.placeholder.com/300"
+                      src="img/project-soul-units/design-language-system.png"
                       alt="Picture"
                       width="300"
                     />
@@ -658,11 +670,11 @@
                 <div class="column col-md-6">
                   <picture>
                     <source
-                      srcset="https://via.placeholder.com/300"
+                      srcset="img/project-soul-units/design-handoff.png"
                       media="(max-width:767px)"
                     />
                     <img
-                      src="https://via.placeholder.com/300"
+                      src="img/project-soul-units/design-handoff.png"
                       alt="Picture"
                       width="300"
                     />
@@ -731,15 +743,15 @@
           <!-- Section Content -->
           <div>
             <div>
-              <div class="column col-md-12">
-                <p>
+              <div class="row">
+                <p class="capFirst">
                   <em>Soul Units</em> was the first time I designed an app from
                   concept to completion, and I grew in many ways throughout the
                   journey.
                 </p>
               </div>
               <h3>My greatest takeaways from this project are:</h3>
-              <div class="column col-md-12">
+              <div class="row">
                 <h4><span>#1:</span> Parameters are a project's best friend</h4>
                 <p>
                   The clarity gained in the research stages of the project
@@ -748,11 +760,11 @@
                   helped me stay pointed in the right direction.
                 </p>
               </div>
-              <h4>
-                <span>#2:</span> Anything is possible, but not everything is
-                necessary
-              </h4>
               <div class="row">
+                <h4>
+                  <span>#2:</span> Anything is possible, but not everything is
+                  necessary
+                </h4>
                 <div class="column col-md-6">
                   <p>
                     I truly loved the ideation and prototyping stages of this
@@ -768,18 +780,18 @@
                 <div class="column col-md-6">
                   <picture>
                     <source
-                      srcset="https://via.placeholder.com/300"
+                      srcset="img/project-soul-units/icat7.jpg"
                       media="(max-width:767px)"
                     />
                     <img
-                      src="https://via.placeholder.com/300"
+                      src="img/project-soul-units/icat7.jpg"
                       alt="Picture"
                       width="300"
                     />
                   </picture>
                 </div>
               </div>
-              <div class="column col-md-12">
+              <div class="row">
                 <h4><span>#3:</span> People are awesome!</h4>
                 <p>
                   From the initial interviews, to the usability testing and
@@ -800,7 +812,7 @@
     <!-- Footer -->
     <footer id="contact">
       <div class="container">
-        <div class="column col-md-12">
+        <div class="row">
           <h2>Talk to Me.</h2>
           <p>You can reach me through the following channels:</p>
           <div class="button contact">
@@ -841,7 +853,7 @@
         </div>
       </div>
     </footer>
-    <div class="column col-md-12" id="copyright">
+    <div class="row" id="copyright">
       <p>&copy Adam Vigeant 2021</p>
     </div>
     <script src="js/scripts.js"></script>
