@@ -37,7 +37,6 @@ Tertiary Color (Gold): #7e6529;
 
 .container {
   padding: 0 15px;
-  margin: 0;
 }
 
 .row {
@@ -45,18 +44,17 @@ Tertiary Color (Gold): #7e6529;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 0 2em;
 }
 
-.row::after {
+.row:after {
   content: "";
   clear: both;
   display: table;
 }
 
 #work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
+  padding: 22px 0 22px;
+  border-bottom: 1px solid lightgray;
 }
 
 img {
@@ -167,6 +165,26 @@ a#logo > svg {
   }
 }
 
+@keyframes cycleText {
+  0% {
+    content: "UX Designer";
+  }
+  33% {
+    content: "Design Thinker";
+  }
+  67% {
+    content: "Creative Problem Solver";
+  }
+  100% {
+    content: "UX Designer";
+  }
+}
+
+#heroText:after {
+  animation: 9s cycleText infinite ease-out;
+  content: "";
+}
+
 .a-part {
   animation: 0.6s move-a 1 normal ease-out;
 }
@@ -257,7 +275,7 @@ h2 {
 h3 {
   font-size: 1.25em;
   color: #006478;
-  padding: 1em 0;
+  padding: 1em 0 0.2em;
 }
 
 h4 {
@@ -268,6 +286,7 @@ h4 {
 p {
   display: inline-block;
   margin-right: auto;
+  padding-top: 0.25em;
   padding-bottom: 1em;
 }
 
@@ -277,16 +296,20 @@ p {
 
 #hero h1 {
   margin: 0;
+  padding: 0.5em 0 0.25em;
+}
+
+h1#workHero {
+  padding: 1em 0
 }
 
 #hero span {
   display: block;
   font-weight: 600;
-  font-size: 0.5em;
+  font-size: 0.4em;
   line-height: 1.2em;
   color: #006478;
   text-align: center;
-  padding: 0 1em;
 }
 
 #work {
@@ -295,7 +318,7 @@ p {
 
 #work h3 {
   font-size: 1.5em;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 #work h2 {
@@ -308,6 +331,14 @@ main#project {
   padding-bottom: 0;
 }
 
+div.row.reverse {
+  flex-direction: column-reverse;
+}
+
+div.row#hero {
+  padding-bottom: 1em;
+}
+
 #heroImg {
   padding: 0 10px;
 }
@@ -315,7 +346,7 @@ main#project {
 .section {
   flex-direction: column;
   padding-bottom: 5em;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid lightgray;
 }
 
 .section::after {
@@ -328,9 +359,18 @@ main#project {
   font-size: 1.25em;
 }
 
+#project ul {
+  padding-bottom: 1em;
+}
+
+#contents {
+  background-color: lightgray;
+}
+
 #contents ul {
   list-style-type: none;
   margin: 0;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -344,7 +384,13 @@ main#project {
   font-family: "acumin-pro", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  padding: 2em 0em 1em;
+  padding: 2em 0em 2em;
+}
+
+#contents h2 {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  padding: 2em 0 1em;
 }
 
 .section h3 {
@@ -361,6 +407,8 @@ main#project {
 #project #userTests p {
   width: 80%;
   margin-left: auto;
+  text-align: center;
+  padding-bottom: 0;
 }
 
 h2 > span {
@@ -515,7 +563,7 @@ footer {
   font-size: 0.8em;
   background-color: #006478;
   margin: 0;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 #copyright p {
@@ -572,6 +620,10 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  div.row.reverse {
+    flex-direction: row;
+  }
+
   .column {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -589,6 +641,10 @@ Medium devices (640px and larger)
     font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
     font-size: 2em;
     margin: 0;
+  }
+
+  #contents h2 {
+    font-family: "acumin-pro", sans-serif;
   }
 
   h2 > span {
@@ -621,12 +677,29 @@ Medium devices (640px and larger)
     display: none;
   }
 
-/*   #hero {
+  /*   #hero {
     background-color: lightgray;
   } */
 
+  #hero h1 {
+    padding: 0.5em 0;
+  }
+
+  h1#workHero {
+    line-height: 1.5em;
+    padding: 1em 0
+  }
+
+  h1#workHero > strong:before {
+    content: "Hey, ";
+  }
+
+  h1#workHero > strong:after {
+    content: " Vigeant";
+  }
+
   #heroImg {
-    padding: 22px 10px;
+    padding: 1em 10px 10px;
   }
 
   #work {
@@ -663,14 +736,14 @@ Medium devices (640px and larger)
   }
 
   #logo {
-    padding: 22px 10px;
+    padding: 22px;
   }
 
   a#logo > svg {
     height: 64px;
   }
 
- /*  .logo-a-color {
+  /*  .logo-a-color {
     fill: #3cc896;
   }
 
@@ -719,13 +792,8 @@ Medium devices (640px and larger)
     margin: 0 10%;
   }
 
-  div.projectFlex#hero > .row {
-    align-items: center;
-    padding: 0 5%;
-  }
-
   #project img {
-    padding: 0 0;
+    padding: 1em 0;
   }
 }
 
