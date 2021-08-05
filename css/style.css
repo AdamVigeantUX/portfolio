@@ -57,6 +57,10 @@ Tertiary Color (Gold): #7e6529;
   border-bottom: 1px solid lightgray;
 }
 
+#work .row:last-of-type {
+  border-style: none;
+}
+
 img {
   width: 100%;
 }
@@ -112,15 +116,19 @@ header a.icon > i.navOpened {
 
 #logo {
   position: relative;
+  font-size: .67em;
   display: flex;
   justify-content: center;
   height: 100%;
   opacity: 100%;
   padding: 10px 10px;
+  color: white;
+  line-height: 1.2em;
 }
 
 a#logo > svg {
   height: 44px;
+  margin-right: 8px;
 }
 
 .logo-a-color {
@@ -265,17 +273,16 @@ h1 {
 }
 
 h2 {
-  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
-  font-size: 1.67em;
-  font-weight: 300;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
   color: #7e6529;
-  text-align: center;
+  padding: 0;
 }
 
 h3 {
   font-size: 1.25em;
   color: #006478;
-  padding: 1em 0 0.2em;
 }
 
 h4 {
@@ -303,6 +310,10 @@ h1#workHero {
   padding: 1em 0
 }
 
+h1#aboutHero {
+  padding: 1em 0
+}
+
 #hero span {
   display: block;
   font-weight: 600;
@@ -319,11 +330,6 @@ h1#workHero {
 #work h3 {
   font-size: 1.5em;
   padding: 0.5em 0;
-}
-
-#work h2 {
-  text-align: left;
-  padding: 0 0 1em;
 }
 
 /* Projects */
@@ -344,7 +350,6 @@ div.row#hero {
 }
 
 .section {
-  flex-direction: column;
   padding-bottom: 5em;
   border-bottom: 1px solid lightgray;
 }
@@ -353,6 +358,10 @@ div.row#hero {
   content: "";
   clear: both;
   display: table;
+}
+
+.section:last-of-type {
+  padding-bottom: 2em;
 }
 
 .capFirst {
@@ -375,26 +384,22 @@ div.row#hero {
 }
 
 #tools p {
+  font-size: .8em;
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  padding: .25em 0 0 ;
 }
 
 #project h2 {
-  font-family: "acumin-pro", sans-serif;
-  font-weight: 700;
-  font-size: 1.5em;
   padding: 2em 0em 2em;
+  text-align: center;
 }
 
 #contents h2 {
   font-family: "acumin-pro", sans-serif;
   font-weight: 700;
   padding: 2em 0 1em;
-}
-
-.section h3 {
-  padding-top: 0;
 }
 
 #project #userTests .row {
@@ -420,7 +425,7 @@ h2 > span {
 
 #project h3 {
   font-weight: 600;
-  margin-bottom: 0;
+  padding: 0 0 .5em;
 }
 
 #project h4 {
@@ -455,6 +460,37 @@ h2 > span {
   display: flex;
   font-size: 1.5em;
   justify-content: center;
+}
+
+/* About */
+
+.col-md-4 {
+  padding: .5em;
+}
+
+#about h2 {
+  padding: 1em 0em 1em;
+}
+
+#about img {
+  max-width: 500px;
+  max-height: 500px;
+  padding: 1em;
+}
+
+#about p {
+  padding-bottom: .5em;
+}
+
+#about #uxSkills, #uxTools, #softSkills {
+  margin: 0;
+  padding-bottom: 0;
+  font-size: .8em;
+  text-align: center;
+}
+
+#cvButton {
+  padding-top: 2em;
 }
 
 /* Links */
@@ -503,18 +539,13 @@ a:active {
 }
 
 #contact .button {
-  display: inline-block;
-  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
   font-weight: 600;
-  text-transform: lowercase;
+  color: #3ca078;
   background-color: #ffffff;
   text-shadow: 0px 0px #ffffff;
-  border: 3px solid #3cc896;
-}
-
-.button.contact:hover {
-  background-color: white;
-  color: #ffffff;
+  border: 4px solid #3cc896;
+  border-radius: 64px;
+  padding: 8px 16px;
 }
 
 li a.listButton1 {
@@ -538,6 +569,16 @@ footer {
   background-color: lightgray;
 }
 
+#contact .row {
+  align-items: center;
+}
+
+#contact .column {
+  display: flex;
+  height: 80%;
+  align-items: center;
+}
+
 #contact h2 {
   color: #006478;
   margin-bottom: 0;
@@ -551,7 +592,7 @@ footer {
 #linkedin {
   display: inline-block;
   vertical-align: middle;
-  padding: 10px;
+  padding: 20px 10px 10px;
 }
 
 #linkedin svg {
@@ -715,6 +756,10 @@ Medium devices (640px and larger)
     font-size: 1.25em;
   }
 
+  .col-md-4 {
+    width: 33%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -806,7 +851,7 @@ Large devices (1024px or larger)
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
