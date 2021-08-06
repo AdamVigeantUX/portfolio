@@ -57,7 +57,11 @@
           <li class="active"><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact" onclick="navClick()">Contact</a></li>
-          <li><a href="files/cv.pdf" target="_blank">CV</a></li>
+          <li>
+            <a href="files/cv.pdf" class="button" id="navCv" target="_blank"
+              >CV</a
+            >
+          </li>
         </ul>
       </nav>
       <a href="javascript:void(0);" class="icon" onclick="navClick()">
@@ -68,750 +72,777 @@
     <!-- Mobile Spacer -->
     <div id="mobileSpacer"></div>
 
-    <!-- Hero Section -->
-    <div class="container row" id="hero">
-      <div class="column col-md-6" id="title">
-        <h1>
-          Soul Units<span
-            >Your mood, energy, and daily<br />activity manager</span
-          >
-        </h1>
-      </div>
-      <div class="column col-md-6" id="heroImg">
-        <picture>
-          <source
-            srcset="img/project-soul-units/header-soul-units.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="img/project-soul-units/header-soul-units.png"
-            alt="Soul Units App"
-            width="600"
-          />
-        </picture>
-      </div>
-    </div>
-
-    <!-- Table of Contents -->
-    <div class="section row" id="contents">
-      <h2>Case Study Contents</h2>
-      <ul>
-        <li>Foreword| <strong>Project Overview</strong></li>
-        <li>Chapter 1| <strong>What's the Problem?</strong></li>
-        <li>Chapter 2| <strong>Dream, Build, Rebuild</strong></li>
-        <li>Chapter 3| <strong>Pass It On</strong></li>
-        <li>
-          <a
-            class="button listButton1"
-            href="https://www.youtube.com/embed/11k253OkyLQ"
-            ><strong>Demo Video</strong></a
-          >
-        </li>
-        <li>
-          <a class="button listButton2" href="https://pjykwd.axshare.com/"
-            ><strong>Interactive Prototype</strong></a
-          >
-        </li>
-        <li><strong>Epilogue| </strong>Always Learning</li>
-      </ul>
-    </div>
-
-    <!-- Project -->
-    <main id="project">
-      <div class="container">
-        <!-- Foreword| Project Overview -->
-        <div class="section">
-          <!-- Heading -->
-          <div class="row" id="foreword">
-            <h2>
-              <span>Foreword</span><br />
-              Project Overview
-            </h2>
-          </div>
-          <!-- Section Content -->
-          <div class="row">
-            <div class="column col-md-6">
-              <h3>Challenge</h3>
-              <p>
-                To create an app in the area of mental and emotional health,
-                that solves a real human need and provides an excellent user
-                experience.
-              </p>
-            </div>
-            <div class="column col-md-6">
-              <h3>Result</h3>
-              <p>
-                A flexible, encouraging app that allows users to track their
-                mood, energy, and daily activities for the sake of personal
-                insight and growth.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-6">
-              <h3>Role</h3>
-              <p>
-                This was a Solo Project—<br />
-                I was responsible for the Research, Data Analysis, Prototyping,
-                User Testing, UI Design, and Design Documentation.
-              </p>
-            </div>
-            <div class="column col-md-6" id="tools">
-              <h3>Tools</h3>
-              <p class="toolsSection">
-                <strong>Design|</strong>
-              </p>
-              <p>Adobe Illustrator • Adobe Photoshop</p>
-              <p class="toolsSection"><strong>Prototyping|</strong></p>
-              <p>Adobe XD • Axure • Invision • Balsamiq</p>
-              <p class="toolsSection"><strong>Research & Testing|</strong></p>
-              <p>Zoom • Google Workspace​​​​​​​</p>
-            </div>
-          </div>
+    <div class="bg">
+      <!-- Hero Section -->
+      <div class="container row" id="hero">
+        <div class="column col-md-6" id="title">
+          <h1>
+            Soul Units<span
+              >Your mood, energy, and daily<br />activity manager</span
+            >
+          </h1>
         </div>
-        <!-- Chapter 1| What's the Problem? -->
-        <div class="section">
-          <!-- Heading -->
-          <div class="row" id="ch1">
-            <h2>
-              <span>Chapter 1</span><br />
-              What's the Problem?<br />
-              <span>Empathize • Define</span>
-            </h2>
-          </div>
-          <!-- Section Content -->
-          <div class="row">
-            <div class="column col-md-6">
-              <p class="capFirst">
-                Soul Units began with a very open-ended request:
-                <strong
-                  >create a mental and emotional health tool for 25-34 year
-                  olds.</strong
-                >
-              </p>
-              <p>
-                <strong>Any successful project needs clear parameters,</strong>
-                so I jumped right into defining the initial direction with
-                exploratory research—<b>COMPETITIVE ANALYSIS</b>,
-                <b>USER INTERVIEWS</b>, and <b>SURVEYS</b>.
-              </p>
-            </div>
-            <div class="column col-md-6">
-              <figure>
-                <picture>
-                  <source
-                    srcset="img/project-soul-units/swot-daylio.png"
-                    media="(max-width:767px)"
-                  />
-                  <img
-                    src="img/project-soul-units/swot-daylio.png"
-                    alt="Picture"
-                    width="300"
-                  />
-                </picture>
-                <figcaption></figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="row reverse">
-            <div class="column col-md-6">
-              <picture>
-                <source
-                  srcset="img/project-soul-units/affinity-map.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/project-soul-units/affinity-map.png"
-                  alt="Picture"
-                  width="300"
-                />
-              </picture>
-            </div>
-            <div class="column col-md-6">
-              <p>
-                Interviews were organized and then analyzed using
-                <b>AFFINITY MAPPING</b>.
-              </p>
-              <p>
-                This helped me identify trends and discover what people were
-                looking for in a mental and emotional health application.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <p>
-              The insights gleaned from research were then compiled into a set
-              of <b>DESIGN PERSONAS</b> to provide vision, empathy, and clarity
-              to the design and development process.
-            </p>
-            <p>
-              I referred to these personas often, taking care to
-              <strong
-                >design for the people who would actually use the final
-                product.</strong
-              >
-            </p>
-          </div>
-          <div class="row">
-            <div class="column col-md-6">
-              <picture>
-                <source
-                  srcset="img/project-soul-units/persona-susan.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/project-soul-units/persona-susan.png"
-                  alt="Picture"
-                  width="300"
-                />
-              </picture>
-            </div>
-            <div class="column col-md-6">
-              <picture>
-                <source
-                  srcset="img/project-soul-units/persona-daniel.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/project-soul-units/persona-daniel.png"
-                  alt="Picture"
-                  width="300"
-                />
-              </picture>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-6">
-              <p>
-                Equipped with an understanding of the target audience I crafted
-                <b>USER STORIES</b> to clarify the tasks that needed to be
-                fleshed-out and tested.
-              </p>
-            </div>
-            <div class="column col-md-6">
-              <picture>
-                <source
-                  srcset="img/project-soul-units/user-story.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/project-soul-units/user-story.png"
-                  alt="Picture"
-                  width="300"
-                />
-              </picture>
-            </div>
-          </div>
-          <div class="row">
-            <p>
-              To think through how to navigate through these tasks, I created
-              <b>USER FLOWS</b>:
-            </p>
-          </div>
-          <div class="row">
-            <div class="column col-md-6">
-              <h3>Flow: Daily Entry</h3>
-              <p>
-                <strong>Objective:</strong> Make an energy/mood entry and an
-                activity list for the day ahead
-              </p>
-              <p><strong>Entry Point:</strong> Opening the app</p>
-              <p>
-                <strong>Success Criteria:</strong> Energy/mood have been logged
-                and activity list has been created
-              </p>
-            </div>
-            <div class="column col-md-6">
-              <picture>
-                <source
-                  srcset="img/project-soul-units/user-flow.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/project-soul-units/user-flow.png"
-                  alt="Picture"
-                  width="300"
-                />
-              </picture>
-            </div>
-          </div>
+        <div class="column col-md-6" id="heroImg">
+          <picture>
+            <source
+              srcset="img/project-soul-units/header-soul-units.png"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/project-soul-units/header-soul-units.png"
+              alt="Soul Units App"
+              width="600"
+            />
+          </picture>
         </div>
+      </div>
 
-        <!-- Chapter 2| Dream, Build, Rebuild -->
-        <div class="section">
-          <!-- Heading -->
-          <div class="row" id="ch2">
-            <h2>
-              <span>Chapter 2</span><br />
-              Dream, Build, Rebuild<br />
-              <span>Ideate • Prototype • Test</span>
-            </h2>
-          </div>
-          <!-- Section Content -->
-          <div>
-            <div class="row">
-              <p class="capFirst">
-                <strong
-                  >Once I had an understanding of the people who would use Soul
-                  Units and what they needed the app to do,</strong
-                >
-                I started sketching ideas.
-              </p>
+      <!-- Table of Contents -->
+      <div class="container section row" id="contents">
+        <h2>Case Study Contents:</h2>
+        <ul>
+          <li>
+            <a href="#foreword">Foreword| <strong>Project Overview</strong></a>
+          </li>
+          <li>
+            <a href="#ch1">Chapter 1| <strong>What's the Problem?</strong></a>
+          </li>
+          <li>
+            <a href="#ch2">Chapter 2| <strong>Dream, Build, Rebuild</strong></a>
+          </li>
+          <li>
+            <a href="#ch3">Chapter 3| <strong>Pass It On</strong></a>
+          </li>
+          <li>
+            <a
+              class="button listButton1"
+              href="https://www.youtube.com/embed/11k253OkyLQ"
+              ><strong>Demo Video</strong></a
+            >
+          </li>
+          <li>
+            <a class="button listButton2" href="https://pjykwd.axshare.com/"
+              ><strong>Interactive Prototype</strong></a
+            >
+          </li>
+          <li>
+            <a href="#epilogue">Epilogue| <strong>Always Learning</strong></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Project -->
+      <main id="project">
+        <div class="container">
+          <!-- Foreword| Project Overview -->
+          <div class="section">
+            <!-- Heading -->
+            <div class="row" id="foreword">
+              <h2>
+                <span>Foreword</span><br />
+                Project Overview
+              </h2>
             </div>
+            <!-- Section Content -->
             <div class="row">
               <div class="column col-md-6">
+                <h3>Challenge</h3>
                 <p>
-                  The most promising sketches were then converted into
-                  <b>LOW-FIDELITY WIREFRAMES</b> for internal review.
+                  To create an app in the area of mental and emotional health,
+                  that solves a real human need and provides an excellent user
+                  experience.
                 </p>
               </div>
               <div class="column col-md-6">
+                <h3>Result</h3>
+                <p>
+                  A flexible, encouraging app that allows users to track their
+                  mood, energy, and daily activities for the sake of personal
+                  insight and growth.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column col-md-6">
+                <h3>Role</h3>
+                <p>
+                  This was a Solo Project—<br />
+                  I was responsible for the Research, Data Analysis,
+                  Prototyping, User Testing, UI Design, and Design
+                  Documentation.
+                </p>
+              </div>
+              <div class="column col-md-6" id="tools">
+                <h3>Tools</h3>
+                <p class="toolsSection">
+                  <strong>Design|</strong>
+                </p>
+                <p>Adobe Illustrator • Adobe Photoshop</p>
+                <p class="toolsSection"><strong>Prototyping|</strong></p>
+                <p>Adobe XD • Axure • Invision • Balsamiq</p>
+                <p class="toolsSection"><strong>Research & Testing|</strong></p>
+                <p>Zoom • Google Workspace​​​​​​​</p>
+              </div>
+            </div>
+          </div>
+          <!-- Chapter 1| What's the Problem? -->
+          <div class="section">
+            <!-- Heading -->
+            <div class="row" id="ch1">
+              <h2>
+                <span>Chapter 1</span><br />
+                What's the Problem?<br />
+                <span>Empathize • Define</span>
+              </h2>
+            </div>
+            <!-- Section Content -->
+            <div class="row">
+              <div class="column col-md-8">
+                <p class="capFirst">
+                  Soul Units began with a very open-ended request:
+                  <strong
+                    >create a mental and emotional health tool for 25-34 year
+                    olds.</strong
+                  >
+                </p>
+                <p>
+                  <strong
+                    >Any successful project needs clear parameters,</strong
+                  >
+                  so I jumped right into defining the initial direction with
+                  exploratory research—<b>COMPETITIVE ANALYSIS</b>,
+                  <b>USER INTERVIEWS</b>, and <b>SURVEYS</b>.
+                </p>
+              </div>
+              <div class="column col-md-4">
+                <figure>
+                  <picture>
+                    <source
+                      srcset="img/project-soul-units/swot-daylio.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/project-soul-units/swot-daylio.png"
+                      alt="Picture"
+                      width="300"
+                    />
+                  </picture>
+                  <figcaption></figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="row reverse">
+              <div class="column col-md-4">
                 <picture>
                   <source
-                    srcset="img/project-soul-units/sketch-to-wireframe.png"
+                    srcset="img/project-soul-units/affinity-map.png"
                     media="(max-width:767px)"
                   />
                   <img
-                    src="img/project-soul-units/sketch-to-wireframe.png"
+                    src="img/project-soul-units/affinity-map.png"
                     alt="Picture"
                     width="300"
+                  />
+                </picture>
+              </div>
+              <div class="column col-md-8">
+                <p>
+                  Interviews were organized and then analyzed using
+                  <b>AFFINITY MAPPING</b>.
+                </p>
+                <p>
+                  This helped me identify trends and discover what people were
+                  looking for in a mental and emotional health application.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                The insights gleaned from research were then compiled into a set
+                of <b>DESIGN PERSONAS</b> to provide vision, empathy, and
+                clarity to the design and development process.
+              </p>
+              <p>
+                I referred to these personas often, taking care to
+                <strong
+                  >design for the people who would actually use the final
+                  product.</strong
+                >
+              </p>
+            </div>
+            <div class="row">
+              <div class="column col-md-6">
+                <picture>
+                  <source
+                    srcset="img/project-soul-units/persona-susan.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-soul-units/persona-susan.png"
+                    alt="Picture"
+                    width="300"
+                    class="persona"
+                  />
+                </picture>
+              </div>
+              <div class="column col-md-6">
+                <picture>
+                  <source
+                    srcset="img/project-soul-units/persona-daniel.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-soul-units/persona-daniel.png"
+                    alt="Picture"
+                    width="300"
+                    class="persona"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column col-md-8">
+                <p>
+                  Equipped with an understanding of the target audience I
+                  crafted
+                  <b>USER STORIES</b> to clarify the tasks that needed to be
+                  fleshed-out and tested.
+                </p>
+              </div>
+              <div class="column col-md-4">
+                <picture>
+                  <source
+                    srcset="img/project-soul-units/user-story.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-soul-units/user-story.png"
+                    alt="Picture"
+                    style="height: 300px"
                   />
                 </picture>
               </div>
             </div>
             <div class="row">
               <p>
-                Wireframes were further developed into a
-                <b>MID-FIDELITY PROTOTYPE</b> with the purpose of testing with
-                real humans.
-              </p>
-              <p>
-                A <b>TEST PLAN</b> was created along with a <b>TEST SCRIPT</b>,
-                and I sought out six participants to journey with me through a
-                <b>REMOTE USABILITY TEST</b>.
-                <strong>During the tests, participants were asked to:</strong>
+                To think through how to navigate through these tasks, I created
+                <b>USER FLOWS</b>:
               </p>
             </div>
-            <div id="userTests">
+            <div class="row">
+              <div class="column col-md-4">
+                <h3>Flow: Daily Entry</h3>
+                <p>
+                  <strong>Objective:</strong> Make an energy/mood entry and an
+                  activity list for the day ahead
+                </p>
+                <p><strong>Entry Point:</strong> Opening the app</p>
+                <p>
+                  <strong>Success Criteria:</strong> Energy/mood have been
+                  logged and activity list has been created
+                </p>
+              </div>
+              <div class="column col-md-8">
+                <picture>
+                  <source
+                    srcset="img/project-soul-units/user-flow.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-soul-units/user-flow.png"
+                    alt="Picture"
+                    style="max-width: 860px; width: 100%"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 2| Dream, Build, Rebuild -->
+          <div class="section">
+            <!-- Heading -->
+            <div class="row" id="ch2">
+              <h2>
+                <span>Chapter 2</span><br />
+                Dream, Build, Rebuild<br />
+                <span>Ideate • Prototype • Test</span>
+              </h2>
+            </div>
+            <!-- Section Content -->
+            <div>
               <div class="row">
-                <div class="column col-md-6">
-                  <p><strong>Track their energy and mood,</strong></p>
-                </div>
-                <div class="column col-md-6 projGif">
-                  <div>
-                    <picture>
-                      <source
-                        srcset="img/project-soul-units/gifs/entry.gif"
-                        media="(max-width:767px)"
-                      />
-                      <img
-                        src="img/project-soul-units/gifs/entry.gif"
-                        alt="Picture"
-                        width="100"
-                      />
-                    </picture>
-                  </div>
-                </div>
+                <p class="capFirst">
+                  <strong
+                    >Once I had an understanding of the people who would use
+                    Soul Units and what they needed the app to do,</strong
+                  >
+                  I started sketching ideas.
+                </p>
               </div>
               <div class="row">
-                <div class="column col-md-6">
+                <div class="column col-md-8">
                   <p>
-                    <strong>add activities to a to-do list,</strong>
+                    The most promising sketches were then converted into
+                    <b>LOW-FIDELITY WIREFRAMES</b> for internal review.
                   </p>
                 </div>
-                <div class="column col-md-6 projGif">
-                  <div>
-                    <picture>
-                      <source
-                        srcset="
-                          img/project-soul-units/gifs/adding-activities_k.gif
-                        "
-                        media="(max-width:767px)"
-                      />
-                      <img
-                        src="img/project-soul-units/gifs/adding-activities_k.gif"
-                        alt="Picture"
-                        width="100"
-                      />
-                    </picture>
+                <div class="column col-md-4">
+                  <picture>
+                    <source
+                      srcset="img/project-soul-units/sketch-to-wireframe.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/project-soul-units/sketch-to-wireframe.png"
+                      alt="Picture"
+                      width="300"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="row">
+                <p>
+                  Wireframes were further developed into a
+                  <b>MID-FIDELITY PROTOTYPE</b> with the purpose of testing with
+                  real humans.
+                </p>
+                <p>
+                  A <b>TEST PLAN</b> was created along with a
+                  <b>TEST SCRIPT</b>, and I sought out six participants to
+                  journey with me through a <b>REMOTE USABILITY TEST</b>.
+                  <strong>During the tests, participants were asked to:</strong>
+                </p>
+              </div>
+              <div class="userTests">
+                <div class="row">
+                  <div class="column col-md-6">
+                    <p><strong>Track their energy and mood,</strong></p>
+                  </div>
+                  <div class="column col-md-6 projGif">
+                    <div>
+                      <picture>
+                        <source
+                          srcset="img/project-soul-units/gifs/entry.gif"
+                          media="(max-width:767px)"
+                        />
+                        <img
+                          src="img/project-soul-units/gifs/entry.gif"
+                          alt="Picture"
+                          width="100"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column col-md-6">
+                    <p>
+                      <strong>add activities to a to-do list,</strong>
+                    </p>
+                  </div>
+                  <div class="column col-md-6 projGif">
+                    <div>
+                      <picture>
+                        <source
+                          srcset="
+                            img/project-soul-units/gifs/adding-activities_k.gif
+                          "
+                          media="(max-width:767px)"
+                        />
+                        <img
+                          src="img/project-soul-units/gifs/adding-activities_k.gif"
+                          alt="Picture"
+                          width="100"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column col-md-6">
+                    <p>
+                      <strong
+                        >...and mark an activity as complete, reflecting on how
+                        it affected them.</strong
+                      >
+                    </p>
+                  </div>
+                  <div class="column col-md-6 projGif">
+                    <div>
+                      <picture>
+                        <source
+                          srcset="
+                            img/project-soul-units/gifs/check-off-activity.gif
+                          "
+                          media="(max-width:767px)"
+                        />
+                        <img
+                          src="img/project-soul-units/gifs/check-off-activity.gif"
+                          alt="Picture"
+                          width="100"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="column col-md-6">
-                  <p>
-                    <strong
-                      >...and mark an activity as complete, reflecting on how it
-                      affected them.</strong
-                    >
-                  </p>
-                </div>
-                <div class="column col-md-6 projGif">
-                  <div>
-                    <picture>
-                      <source
-                        srcset="
-                          img/project-soul-units/gifs/check-off-activity.gif
-                        "
-                        media="(max-width:767px)"
-                      />
-                      <img
-                        src="img/project-soul-units/gifs/check-off-activity.gif"
-                        alt="Picture"
-                        width="100"
-                      />
-                    </picture>
-                  </div>
-                </div>
+                <p>
+                  Once testing was complete I compiled the results and analyzed
+                  them using
+                  <strong
+                    >Nielsen's Severity Ratings for Usability Problems</strong
+                  >.
+                </p>
               </div>
-            </div>
-            <div class="row">
-              <p>
-                Once testing was complete I compiled the results
-                and analyzed them using
-                <strong
-                  >Nielsen's Severity Ratings for Usability Problems</strong
-                >.
-              </p>
-            </div>
-            <div class="row">
-              <h4>Several small issues were identified:</h4>
-              <ul>
-                <li>
-                  People tried to click the "Person" graphic to add Energy/Mood
-                  entries
-                </li>
-                <li>
-                  "Entry Saved" confirmations after making an entry went unseen
-                </li>
-                <li>"Energy" and "Mood" were initially lumped together</li>
-              </ul>
-            </div>
-            <div class="row">
-              <h4>More serious issues also came to light:</h4>
-              <ul>
-                <li>
-                  Participants perceived the "+Add Activity" button to be
-                  disabled
-                </li>
-                <li>Certain options in Activity Reviews caused confusion</li>
-              </ul>
-            </div>
-            <div id="biggestFinding">
               <div class="row">
-                <h4>But the most crucial discovery:</h4>
+                <h4>Several small issues were identified:</h4>
                 <ul>
                   <li>
-                    Participants demonstrated a hightened emotional response to
-                    changes in the Energy/Mood meter graphic
+                    People tried to click the "Person" graphic to add
+                    Energy/Mood entries
                   </li>
+                  <li>
+                    "Entry Saved" confirmations after making an entry went
+                    unseen
+                  </li>
+                  <li>"Energy" and "Mood" were initially lumped together</li>
                 </ul>
               </div>
               <div class="row">
+                <h4>More serious issues also came to light:</h4>
+                <ul>
+                  <li>
+                    Participants perceived the "+Add Activity" button to be
+                    disabled
+                  </li>
+                  <li>Certain options in Activity Reviews caused confusion</li>
+                </ul>
+              </div>
+              <div id="biggestFinding">
+                <div class="row">
+                  <h4>But the most crucial discovery:</h4>
+                  <ul>
+                    <li>
+                      Participants demonstrated a hightened emotional response
+                      to changes in the Energy/Mood meter graphic
+                    </li>
+                  </ul>
+                </div>
+                <div class="row userTests">
+                  <div class="column col-md-8">
+                    <p>
+                      <strong
+                        ><em
+                          >—5 out of the 6 participants communicated strong,
+                          negative feelings when they saw the meter fall, and
+                          positive feelings when the meter went up!</em
+                        ></strong
+                      >
+                    </p>
+                  </div>
+                  <div class="column col-md-4">
+                    <picture>
+                      <source
+                        srcset="
+                          img/project-soul-units/gifs/check-off-activity-deplete.gif
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/gifs/check-off-activity-deplete.gif"
+                        alt="Picture"
+                        width="300"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p>
+                    <em>Soul Units</em> needed to encourage growth in the people
+                    using it—not reinforce negative feelings. Special care
+                    needed to be given to redesigning the way a user's energy
+                    and mood were displayed.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
                 <div class="column col-md-6">
                   <p>
-                    <strong
-                      >—5 out of the 6 participants communicated strong,
-                      negative feelings when they saw the meter fall, and
-                      positive feelings when the meter went up!</strong
-                    >
+                    Several more rounds of the
+                    <b>IDEATE &gt; PROTOTYPE &gt; TEST</b> process were needed
+                    to address identified problems and refine the design to a
+                    satisfactory level.
                   </p>
                 </div>
                 <div class="column col-md-6">
                   <picture>
                     <source
-                      srcset="
-                        img/project-soul-units/gifs/check-off-activity-deplete.gif
-                      "
+                      srcset="img/project-soul-units/iteration.png"
                       media="(max-width:767px)"
                     />
                     <img
-                      src="img/project-soul-units/gifs/check-off-activity-deplete.gif"
+                      src="img/project-soul-units/iteration.png"
                       alt="Picture"
                       width="300"
                     />
                   </picture>
                 </div>
               </div>
-
               <div class="row">
                 <p>
-                  <em>Soul Units</em> needed to encourage growth in the people
-                  using it—not reinforce negative feelings. Special care needed
-                  to be given to redesigning the way a user's energy and mood
-                  were displayed.
+                  <strong>After several iterations and a series of tests</strong
+                  >, usability issues were resolved, and the overall feel of the
+                  app was adjusted to be more positive and light.
                 </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column col-md-6">
                 <p>
-                  Several more rounds of the
-                  <b>IDEATE &gt; PROTOTYPE &gt; TEST</b> process were needed to
-                  address identified problems and refine the design to a
-                  satisfactory level.
+                  Most importantly,
+                  <strong
+                    >the meter graphics within the app were redesigned</strong
+                  >
+                  to show an increase after the completion of activities, rather
+                  than echoing back to the user their current energy and mood
+                  levels.
                 </p>
               </div>
-              <div class="column col-md-6">
-                <picture>
-                  <source
-                    srcset="img/project-soul-units/iteration.png"
-                    media="(max-width:767px)"
-                  />
-                  <img
-                    src="img/project-soul-units/iteration.png"
-                    alt="Picture"
-                    width="300"
-                  />
-                </picture>
-              </div>
-            </div>
-            <div class="row">
-              <p>
-                <strong>After several iterations and a series of tests</strong>,
-                usability issues were resolved, and the overall feel of the app
-                was adjusted to be more positive and light.
-              </p>
-              <p>
-                Most importantly,
-                <strong
-                  >the meter graphics within the app were redesigned</strong
-                >
-                to show an increase after the completion of activities, rather
-                than echoing back to the user their current energy and mood
-                levels.
-              </p>
             </div>
           </div>
-        </div>
-        <!-- Chapter 3| Pass It On -->
-        <div class="section">
-          <!-- Heading -->
-          <div class="row" id="ch3">
-            <h2>
-              <span>Chapter 3</span><br />
-              Pass It On<br />
-              <span>Tell Story • Present</span>
-            </h2>
-          </div>
-          <!-- Section Content -->
-          <div>
+          <!-- Chapter 3| Pass It On -->
+          <div class="section">
+            <!-- Heading -->
+            <div class="row" id="ch3">
+              <h2>
+                <span>Chapter 3</span><br />
+                Pass It On<br />
+                <span>Tell Story • Present</span>
+              </h2>
+            </div>
+            <!-- Section Content -->
             <div>
-              <div class="row">
-                <p class="capFirst">
-                  The time for final refinement of the
-                  <b>USER INTERFACE DESIGN</b> had come, and
-                  <strong
-                    >just because this was a solo project, it didn't mean I had
-                    to go it alone</strong
-                  >.
-                </p>
-                <p>
-                  If test participants could provide valuable insight into the
-                  function and usability of the app,
-                  <strong
-                    >finding some extra eyes to critique the UI could only be a
-                    positive endeavor</strong
-                  >.
-                </p>
-              </div>
-              <div class="row">
-                <div class="column col-md-6">
-                  <picture>
-                    <source
-                      srcset="img/project-soul-units/design-updates.png"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      src="img/project-soul-units/design-updates.png"
-                      alt="Picture"
-                      width="300"
-                    />
-                  </picture>
-                </div>
-                <div class="column col-md-6">
-                  <p>
-                    My focus for this <b>DESIGN REVIEW</b> was to discover ways
-                    to increase usability, as well as
+              <div>
+                <div class="row">
+                  <p class="capFirst">
+                    The time for final refinement of the
+                    <b>USER INTERFACE DESIGN</b> had come, and
                     <strong
-                      >ensure the design was compliant with current
-                      accessibility guidelines</strong
+                      >just because this was a solo project, it didn't mean I
+                      had to go it alone</strong
                     >.
                   </p>
                   <p>
-                    Consulting with peers in the design community, I received
-                    feedback that helped me upgrade the
-                    <b>USER INTERFACE DESSIGN</b> of <em>Soul Units</em>.
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column col-md-6">
-                  <p>
-                    To ensure consistency in future iterations of the
-                    application, it was important to craft a
-                    <b>DESIGN SYSTEM</b> to communicate
-                    <em>Soul Units'</em> essential qualities to those that would
-                    pick up the project after me.
-                  </p>
-                </div>
-                <div class="column col-md-6">
-                  <picture>
-                    <source
-                      srcset="img/project-soul-units/design-language-exerpt.png"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      src="img/project-soul-units/design-language-exerpt.png"
-                      alt="Picture"
-                      width="300"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column col-md-6">
-                  <picture>
-                    <source
-                      srcset="img/project-soul-units/design-handoff.png"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      src="img/project-soul-units/design-handoff.png"
-                      alt="Picture"
-                      width="300"
-                    />
-                  </picture>
-                </div>
-                <div class="column col-md-6">
-                  <p>
-                    With the UI finalized, documentation prepared, and a
-                    <b>HIGH-FIDELITY PROTOTYPE</b> complete—<em>Soul Units</em>
-                    was finally ready to become a reality!
-                  </p>
-                  <p>
+                    If test participants could provide valuable insight into the
+                    function and usability of the app,
                     <strong
-                      >Assets were organized and the handoff was
-                      completed</strong
-                    >
-                    using Adobe XD's "development handoff" feature.​​​​​​​
+                      >finding some extra eyes to critique the UI could only be
+                      a positive endeavor</strong
+                    >.
                   </p>
+                </div>
+                <div class="row reverse">
+                  <div class="column col-md-6">
+                    <picture>
+                      <source
+                        srcset="img/project-soul-units/design-updates.png"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/design-updates.png"
+                        alt="Picture"
+                        width="300"
+                      />
+                    </picture>
+                  </div>
+                  <div class="column col-md-6">
+                    <p>
+                      My focus for this <b>DESIGN REVIEW</b> was to discover
+                      ways to increase usability, as well as
+                      <strong
+                        >ensure the design was compliant with current
+                        accessibility guidelines</strong
+                      >.
+                    </p>
+                    <p>
+                      Consulting with peers in the design community, I received
+                      feedback that helped me upgrade the
+                      <b>USER INTERFACE DESSIGN</b> of <em>Soul Units</em>.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column col-md-6">
+                    <p>
+                      To ensure consistency in future iterations of the
+                      application, it was important to craft a
+                      <b>DESIGN SYSTEM</b> to communicate
+                      <em>Soul Units'</em> essential qualities to those that
+                      would pick up the project after me.
+                    </p>
+                  </div>
+                  <div class="column col-md-6">
+                    <picture>
+                      <source
+                        srcset="
+                          img/project-soul-units/design-language-exerpt.png
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/design-language-exerpt.png"
+                        alt="Picture"
+                        width="300"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="row reverse">
+                  <div class="column col-md-6">
+                    <picture>
+                      <source
+                        srcset="img/project-soul-units/design-handoff.png"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/design-handoff.png"
+                        alt="Picture"
+                        width="300"
+                      />
+                    </picture>
+                  </div>
+                  <div class="column col-md-6">
+                    <p>
+                      With the UI finalized, documentation prepared, and a
+                      <b>HIGH-FIDELITY PROTOTYPE</b> complete—<em
+                        >Soul Units</em
+                      >
+                      was finally ready to become a reality!
+                    </p>
+                    <p>
+                      <strong
+                        >Assets were organized and the handoff was
+                        completed</strong
+                      >
+                      using Adobe XD's "development handoff" feature.​​​​​​​
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Demo Video -->
-        <div class="section">
-          <!-- Heading -->
-          <div id="video">
-            <h2>Demo Video</h2>
-          </div>
-          <!-- Section Content -->
-          <div>
+          <!-- Demo Video -->
+          <div class="section">
+            <!-- Heading -->
+            <div id="video">
+              <h2>Demo Video</h2>
+            </div>
+            <!-- Section Content -->
             <div>
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/11k253OkyLQ"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                id="demoVid"
-              ></iframe>
+              <div>
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/11k253OkyLQ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  id="demoVid"
+                ></iframe>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Interactive Prototype -->
-        <div class="section">
-          <!-- Heading -->
-          <div id="prototype">
-            <h2>Interactive Prototype</h2>
+          <!-- Interactive Prototype -->
+          <div class="section">
+            <!-- Heading -->
+            <div id="prototype">
+              <h2>Interactive Prototype</h2>
+            </div>
+            <!-- Section Content -->
+            <div id="interactiveProto">
+              <a href="https://pjykwd.axshare.com/" class="button">
+                Try Soul Units
+              </a>
+            </div>
           </div>
-          <!-- Section Content -->
-          <div id="interactiveProto">
-            <a href="https://pjykwd.axshare.com/" class="button">
-              Try Soul Units
-            </a>
-          </div>
-        </div>
-        <!-- Epilogue| Always Learning -->
-        <div class="section">
-          <!-- Heading -->
-          <div id="epilogue">
-            <h2>
-              <span>Epilogue</span><br />
-              Always Learning
-            </h2>
-          </div>
-          <!-- Section Content -->
-          <div>
+          <!-- Epilogue| Always Learning -->
+          <div class="section">
+            <!-- Heading -->
+            <div id="epilogue">
+              <h2>
+                <span>Epilogue</span><br />
+                Always Learning
+              </h2>
+            </div>
+            <!-- Section Content -->
             <div>
-              <div class="row">
-                <p class="capFirst">
-                  <em>Soul Units</em> was the first time I designed an app from
-                  concept to completion, and I grew in many ways throughout the
-                  journey.
-                </p>
-              </div>
-              <h3>My greatest takeaways from this project are:</h3>
-              <div class="row">
-                <h4><span>#1:</span> Parameters are a project's best friend</h4>
-                <p>
-                  The clarity gained in the research stages of the project
-                  provided essential boundaries and helped me avoid wasting my
-                  time exploring dead-ends. My personas felt like a compass that
-                  helped me stay pointed in the right direction.
-                </p>
-              </div>
-              <div class="row">
-                <div class="column col-md-6">
+              <div>
+                <div class="row">
+                  <p class="capFirst">
+                    <em>Soul Units</em> was the first time I designed an app
+                    from concept to completion, and I grew in many ways
+                    throughout the journey.
+                  </p>
+                </div>
+                <h3>My greatest takeaways from this project are:</h3>
+                <div class="row">
                   <h4>
-                    <span>#2:</span> Anything is possible, but not everything is
-                    necessary
+                    <span>#1:</span> Parameters are a project's best friend
                   </h4>
                   <p>
-                    I truly loved the ideation and prototyping stages of this
-                    project—it was so fun to dream up solutions to problems and
-                    see them come to life.
+                    The clarity gained in the research stages of the project
+                    provided essential boundaries and helped me avoid wasting my
+                    time exploring dead-ends. My personas felt like a compass
+                    that helped me stay pointed in the right direction.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="column col-md-8">
+                    <h4>
+                      <span>#2:</span> Anything is possible, but not everything
+                      is necessary
+                    </h4>
+                    <p>
+                      I truly loved the ideation and prototyping stages of this
+                      project—it was so fun to dream up solutions to problems
+                      and see them come to life.
+                    </p>
+                    <p>
+                      There were however, times that I realized I needed to
+                      focus back on the essential product—extra features can
+                      always be added after launch!
+                    </p>
+                  </div>
+                  <div class="column col-md-4">
+                    <picture>
+                      <source
+                        srcset="img/project-soul-units/icat7.jpg"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/project-soul-units/icat7.jpg"
+                        alt="Picture"
+                        width="300"
+                        style="padding: 0"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="row">
+                  <h4><span>#3:</span> People are awesome!</h4>
+                  <p>
+                    From the initial interviews, to the usability testing and
+                    design critique—the people who helped define, test, and
+                    refine this project had a profound impact.
                   </p>
                   <p>
-                    There were however, times that I realized I needed to focus
-                    back on the essential product—extra features can always be
-                    added after launch!
+                    I am grateful to all who lent me their time and energy to
+                    make Soul Units what it is!
                   </p>
                 </div>
-                <div class="column col-md-6">
-                  <picture>
-                    <source
-                      srcset="img/project-soul-units/icat7.jpg"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      src="img/project-soul-units/icat7.jpg"
-                      alt="Picture"
-                      width="300"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="row">
-                <h4><span>#3:</span> People are awesome!</h4>
-                <p>
-                  From the initial interviews, to the usability testing and
-                  design critique—the people who helped define, test, and refine
-                  this project had a profound impact.
-                </p>
-                <p>
-                  I am grateful to all who lent me their time and energy to make
-                  Soul Units what it is!
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-
+      </main>
+    </div>
     <!-- Footer -->
     <footer id="contact">
       <div class="container">
@@ -823,7 +854,11 @@
             <p>You can reach me through the following channels:</p>
           </div>
           <div class="row">
-              <div class="column"><a href="mailto:adamvigeantux@gmail.com" class="button"> E-mail Me </a></div>
+            <div class="column">
+              <a href="mailto:adamvigeantux@gmail.com" class="button">
+                E-mail Me
+              </a>
+            </div>
             <div class="column" id="linkedin">
               <a
                 href="https://www.linkedin.com/in/adam-vigeant/"
@@ -855,8 +890,8 @@
   	 M7.3,10.3c-1.9,0-3.4-1.5-3.4-3.4s1.5-3.4,3.4-3.4s3.4,1.5,3.4,3.4S9.1,10.3,7.3,10.3z M28.6,27.7c0,0.4-0.3,0.8-0.8,0.8H24
   	c-0.4,0-0.8-0.3-0.8-0.8v-7.1c0-1.1,0.3-4.6-2.7-4.6c-2.4,0-2.9,2.4-2.9,3.5v8.1c0,0.4-0.3,0.8-0.8,0.8h-3.7c-0.4,0-0.8-0.3-0.8-0.8
   	V12.5c0-0.4,0.3-0.8,0.8-0.8h3.7c0.4,0,0.8,0.3,0.8,0.8v1.3c0.9-1.3,2.2-2.3,5-2.3c6.2,0,6.1,5.8,6.1,8.9L28.6,27.7L28.6,27.7z"
-                  />
-                </svg></a>
+                  /></svg
+              ></a>
             </div>
           </div>
         </div>
