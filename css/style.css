@@ -40,12 +40,8 @@ Tertiary Color (Gold): #7e6529;
   padding: 0;
 }
 
-[class*="col-"] {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
+.bg {
+  background-color: var(--av-bg);
 }
 
 .container {
@@ -53,8 +49,12 @@ Tertiary Color (Gold): #7e6529;
   background-color: white;
 }
 
-.bg {
-  background-color: var(--av-bg);
+[class*="col-"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 }
 
 .row {
@@ -70,6 +70,13 @@ Tertiary Color (Gold): #7e6529;
   display: table;
 }
 
+img {
+  width: 100%;
+}
+
+
+/* --Work Page-- */
+
 #work .row {
   padding: 22px 0 22px;
   border-bottom: 1px solid lightgray;
@@ -79,17 +86,9 @@ Tertiary Color (Gold): #7e6529;
   border-style: none;
 }
 
-img {
-  width: 100%;
-}
 
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
+/* --Navigation-- */
 
-/* Header */
 header {
   display: flex;
   position: fixed;
@@ -102,6 +101,7 @@ header {
 }
 
 /* Mobile Hamburger */
+
 #mobileSpacer {
   margin-top: 64px;
 }
