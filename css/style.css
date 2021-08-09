@@ -549,9 +549,13 @@ a:active {
 }
 
 #contents a {
-  font-weight: 400;
-  color: white;
-  text-decoration: underline dimgray;
+  font-weight: 300;
+  color: var(--av-link);
+  text-decoration: underline var(--av-linkVisited);
+}
+
+#contents a > strong {
+  font-weight: 600;
 }
 
 #contents a.button {
