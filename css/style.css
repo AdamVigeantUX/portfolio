@@ -391,9 +391,9 @@ div.row#hero {
   padding-bottom: 2em;
 }
 
-.capFirst {
+/* .capFirst {
   font-size: 1.25em;
-}
+} */
 
 #project ul {
   padding-bottom: 1em;
@@ -458,7 +458,7 @@ h2 > span {
 
 #project h3 {
   font-weight: 600;
-  padding: 0 0 0.5em;
+  padding: .5em 0;
 }
 
 #project h4 {
