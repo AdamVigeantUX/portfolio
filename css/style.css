@@ -57,6 +57,12 @@ Tertiary Color (Gold): #7e6529;
   width: 100%;
 }
 
+.section#foreword [class*="col-"] {
+  align-content: flex-start;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -174,7 +180,7 @@ a#logo > svg {
   }
 }
 
-@keyframes cycleText {
+/* @keyframes cycleText {
   0% {
     content: "UX Designer";
   }
@@ -187,12 +193,12 @@ a#logo > svg {
   100% {
     content: "UX Designer";
   }
-}
+} */
 
-#heroText:after {
+/* #heroText:after {
   animation: 9s cycleText infinite ease-out;
   content: "";
-}
+} */
 
 .a-part {
   animation: 0.6s move-a 1 normal ease-out;
@@ -215,9 +221,29 @@ nav {
   padding: 22px 10px;
 }
 
-main ul {
+main ul, ol {
   margin-left: 2em;
   margin-right: auto;
+}
+
+main ol {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--av-gold);
+}
+
+main li {
+  padding-bottom: .4em;
+}
+
+main li span {
+  font-size: .8em;
+  font-weight: normal;
+  color: black;
+}
+
+main ol > li:last-of-type {
+  padding-bottom: 1em;
 }
 
 nav > ul {
@@ -309,7 +335,15 @@ p {
   display: inline-block;
   margin-right: auto;
   padding-top: 0.25em;
+  padding-bottom: .5em;
+}
+
+p:last-of-type{
   padding-bottom: 1em;
+}
+
+#project p strong {
+  font-weight: 600;
 }
 
 #hero {
@@ -388,19 +422,15 @@ div.row#hero {
 }
 
 #contact .section {
-  padding-bottom: 2em;
+  padding: 1em 0 2.5em;
 }
 
 /* .capFirst {
   font-size: 1.25em;
 } */
 
-#project ul {
-  padding-bottom: 1em;
-}
-
 #contents {
-  background-color: var(--av-footer);
+  background-color: var(--av-teal);
 }
 
 #contents ul {
@@ -429,7 +459,7 @@ div.row#hero {
 #contents h2 {
   font-family: "acumin-pro", sans-serif;
   font-weight: 700;
-  color: var(--av-link);
+  color: white;
   padding: 2em 0 1em;
   text-align: center;
 }
@@ -465,7 +495,7 @@ h2 > span {
   color: black;
 }
 
-#project h4 span {
+#project h3 span {
   color: var(--av-gold);
 }
 
@@ -551,11 +581,12 @@ a:active {
 #contents a {
   font-weight: 300;
   color: var(--av-link);
-  text-decoration: underline var(--av-linkVisited);
+  text-decoration: underline var(--av-link);
 }
 
 #contents a > strong {
   font-weight: 600;
+  color: white;
 }
 
 #contents a.button {
@@ -655,55 +686,18 @@ footer {
   padding: 0;
 }
 
-/* Animation Example */
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   div.row.reverse {
     flex-direction: row;
+  }
+
+
+  .row > * {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 
   .column {
@@ -762,13 +756,16 @@ Medium devices (640px and larger)
   } */
 
   #hero h1 {
-    padding: 0.5em 0;
+    padding: 1em 0;
   }
 
   h1#workHero {
     font-weight: 500;
     line-height: 1.5em;
-    padding: 1em 0;
+  }
+
+  h1#aboutHero {
+    padding-bottom: 1.5em;
   }
 
   h1#workHero > strong:before {
@@ -786,6 +783,7 @@ Medium devices (640px and larger)
   #work h3 {
     font-size: 1.67em;
     padding: 0;
+    color: var(--av-gold);
   }
 
   #work p {

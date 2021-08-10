@@ -221,9 +221,33 @@
     <div class="row" id="copyright">
       <p>&copy Adam Vigeant 2021</p>
     </div>
-    <!-- jQuery Script
-      <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script> 
-    -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/scripts.js"></script>
+    <script>
+      var hero = $("#heroText");
+
+      var arrAdj = [
+        "—UX Designer",
+        "—Design Thinker",
+        "—Creative Problem Solver",
+      ];
+
+      const setHeroText = (delayAmount, text) =>
+        setTimeout(function () {
+          hero.html(arrAdj[text]);
+        }, delayAmount);
+
+      for (let i = 0; i < 3; i++) {
+        let delay = (i + 1) * 2500;
+        setHeroText(delay, i);
+      }
+      
+    </script>
   </body>
 </html>
