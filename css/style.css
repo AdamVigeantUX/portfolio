@@ -40,7 +40,7 @@ Tertiary Color (Gold): #7e6529;
   padding: 0;
 }
 
-.bg {
+body {
   background-color: var(--av-bg);
 }
 
@@ -438,7 +438,7 @@ div.row#hero {
   margin: 0;
   padding-bottom: 0;
   text-align: center;
-  line-height: 2em;
+  line-height: 2.4em;
 }
 
 #tools p {
@@ -676,7 +676,7 @@ footer {
   font-size: 0.8em;
   background-color: var(--av-teal);
   margin: 0;
-  padding: 0.5em 0;
+  padding: 1em 0;
 }
 
 #copyright p {
@@ -864,6 +864,11 @@ Medium devices (640px and larger)
   #project .persona {
     padding: 1em;
   }
+
+  main .section:last-of-type{
+    border-bottom: none;
+  }
+
 }
 
 /* ==============================
@@ -875,7 +880,17 @@ Large devices (1024px or larger)
   } */
 
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main div.container:last-of-type {
+    border-radius: 0 0 16px 16px;
+  }
+
+  header {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
