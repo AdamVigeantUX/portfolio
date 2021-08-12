@@ -870,9 +870,9 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  body {
+/*   body {
     font-size: 24px;
-  }
+  } */
 
   .container {
     max-width: 1200px;
