@@ -75,25 +75,22 @@
     <div class="bg">
       <!-- Hero Section -->
       <div class="container row" id="hero">
-        <div class="column col-md-6" id="title">
+        <div class="column col-md-5" id="title">
           <h1>
             Soul Units<span
               >Your mood, energy, and daily<br />activity manager</span
             >
           </h1>
         </div>
-        <div class="column col-md-6" id="heroImg">
-          <picture>
-            <source
-              srcset="img/project-soul-units/header-soul-units.png"
-              media="(max-width:767px)"
-            />
-            <img
-              src="img/project-soul-units/header-soul-units.png"
-              alt="Soul Units App"
-              width="600"
-            />
-          </picture>
+        <div class="column col-md-7" id="heroImg">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/11k253OkyLQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              id="demoVid"
+            ></iframe>
         </div>
       </div>
 
@@ -112,13 +109,6 @@
           </li>
           <li>
             <a href="#ch3">Chapter 3| <strong>Pass It On</strong></a>
-          </li>
-          <li>
-            <a
-              class="button listButton1"
-              href="https://www.youtube.com/embed/11k253OkyLQ"
-              ><strong>Demo Video</strong></a
-            >
           </li>
           <li>
             <a class="button listButton2" href="https://pjykwd.axshare.com/"
@@ -729,34 +719,27 @@
               </div>
             </div>
           </div>
-          <!-- Demo Video -->
-          <div class="section">
-            <!-- Heading -->
-            <div id="video">
-              <h2>Demo Video</h2>
-            </div>
-            <!-- Section Content -->
-            <div>
-              <div>
-                <iframe
-                  src="https://www.youtube-nocookie.com/embed/11k253OkyLQ"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  id="demoVid"
-                ></iframe>
-              </div>
-            </div>
-          </div>
           <!-- Interactive Prototype -->
-          <div class="section">
+          <div class="section" id="prototype">
             <!-- Heading -->
-            <div id="prototype">
+            <div>
               <h2>Interactive Prototype</h2>
             </div>
             <!-- Section Content -->
-            <div id="interactiveProto">
+              <div class="row">
+                <picture>
+                  <source
+                    srcset="img/project-soul-units/header-soul-units.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-soul-units/header-soul-units.png"
+                    alt="Soul Units App"
+                    width="600"
+                  />
+                </picture>
+              </div>
+            <div class="row" id="interactiveProto">
               <a href="https://pjykwd.axshare.com/" class="button">
                 Try Soul Units
               </a>

@@ -456,6 +456,13 @@ div.row#hero {
   text-align: center;
 }
 
+#project #prototype h2 {
+  font-weight: 800;
+  color: var(--av-gold);
+  padding: 2em 0em 1.5em;
+  text-align: center;
+}
+
 #contents h2 {
   font-family: "acumin-pro", sans-serif;
   font-weight: 700;
@@ -520,13 +527,17 @@ h2 > span {
 
 #demoVid {
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
 #interactiveProto {
   display: flex;
   font-size: 1.5em;
   justify-content: center;
+}
+
+#project #prototype img {
+  padding: 0 0 1em;
 }
 
 /* About */
@@ -621,15 +632,15 @@ a:active {
   background-color: var(--av-link);
 }
 
-li a.listButton1 {
+/* li a.listButton1 {
   font-family: "acumin-pro", sans-serif;
   margin: 0.8em;
   padding: 8px 16px;
-}
+} */
 
 li a.listButton2 {
   font-family: "acumin-pro", sans-serif;
-  margin: 0 0.8em 0.8em;
+  margin: .8em;
   padding: 8px 16px;
 }
 
@@ -850,9 +861,8 @@ Medium devices (640px and larger)
 
   /* Projects */
   #demoVid {
-    width: 80%;
-    height: 500px;
-    margin: 0 10%;
+    width: 100%;
+    height: 300px;
   }
 
   #project img {
@@ -867,6 +877,14 @@ Medium devices (640px and larger)
 
   main .section:last-of-type{
     border-bottom: none;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
   }
 
 }
