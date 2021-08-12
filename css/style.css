@@ -323,7 +323,7 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 1.25em;
-  color: black;
+  color: var(--av-teal);
 }
 
 h4 {
@@ -496,7 +496,7 @@ h2 > span {
 }
 
 #project h3 span {
-  color: var(--av-gold);
+  color: dimgray;
 }
 
 #project b {
