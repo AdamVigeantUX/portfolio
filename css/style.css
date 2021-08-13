@@ -780,13 +780,13 @@ Medium devices (640px and larger)
     padding-bottom: 1.5em;
   }
 
-  h1#workHero > strong:before {
+/*   h1#workHero > strong:before {
     content: "Hey, ";
   }
 
   h1#workHero > strong:after {
     content: " Vigeant";
-  }
+  } */
 
   #heroImg {
     padding: 1em 10px 10px;
