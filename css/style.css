@@ -407,6 +407,10 @@ div.row#hero {
   display: table;
 }
 
+#work .section:last-of-type {
+  padding-bottom: 1em;
+}
+
 #contact {
   background-color: var(--av-bg);
 }
