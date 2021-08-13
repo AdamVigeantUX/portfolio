@@ -765,8 +765,11 @@ Medium devices (640px and larger)
   }
 
   h1#workHero {
-    font-weight: 600;
     line-height: 1.5em;
+  }
+
+  h1#workHero span {
+    font-size: .6em;
   }
 
   h1#aboutHero {
