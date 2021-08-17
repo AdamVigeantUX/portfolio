@@ -141,7 +141,6 @@ header a.icon > i.navOpened {
 
 a#logo > svg {
   height: 44px;
-  margin-right: 8px;
 }
 
 .logo-a-color {
@@ -310,7 +309,7 @@ h1 {
 h2 {
   font-family: "acumin-pro", sans-serif;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 2em;
   color: gray;
 }
 
@@ -347,10 +346,13 @@ p:last-of-type{
 #hero h1 {
   margin: 0;
   padding: 0.5em 0 0.25em;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 1px 2px 1px dimgray;
 }
 
 h1#workHero {
   padding: 1em 0;
+  font-size: 2em;
 }
 
 h1#aboutHero {
@@ -361,18 +363,29 @@ h1#aboutHero {
   display: block;
   font-weight: 400;
   font-size: 0.4em;
-  line-height: 1.2em;
-  color: var(--av-teal);
+  line-height: 1.6em;
+  color: dimgray;
   text-align: center;
+  -webkit-text-stroke: 0px;
+  text-shadow: none
+}
+
+#workHero span {
+  font-size: .5em;
 }
 
 #work {
   text-align: center;
 }
 
+#work h2 {
+  display: none;
+}
+
 #work h3 {
   font-size: 1.5em;
   padding: 0.5em 0 0;
+  color: var(--av-green);
 }
 
 #work p {
@@ -452,13 +465,21 @@ div.row#hero {
   color: var(--av-gold);
   padding: 2em 0em 2em;
   text-align: center;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 1px 2px 1px dimgray;
+}
+
+h2 > span {
+  line-height: 2.5em;
+  font-weight: 300;
+  font-size: 0.67em;
+  color: dimgray;
+  -webkit-text-stroke: 0px;
+  text-shadow: none;
 }
 
 #project #prototype h2 {
-  font-weight: 800;
-  color: var(--av-gold);
   padding: 2em 0em 1.5em;
-  text-align: center;
 }
 
 #contents h2 {
@@ -481,14 +502,7 @@ div.row#hero {
   font-size: 1.2em;
   margin-left: auto;
   text-align: center;
-  padding-bottom: 0;
-}
-
-h2 > span {
-  line-height: 2.5em;
-  font-weight: 300;
-  font-size: 0.67em;
-  color: dimgray;
+  padding-bottom: .5em;
 }
 
 #project h3 {
@@ -497,7 +511,8 @@ h2 > span {
 }
 
 #project h4 {
-  color: black;
+  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+  color: var(--av-teal);
 }
 
 #project h3 span {
@@ -506,7 +521,8 @@ h2 > span {
 
 #project b {
   font-weight: 700;
-  color: var(--av-gold);
+  color: var(--av-green);
+  text-shadow: 0px 1px black;
 }
 
 #project img {
@@ -520,7 +536,11 @@ h2 > span {
 }
 
 .projGif picture img {
-  width: 150px;
+  width: 175px;
+}
+
+#biggestFinding img {
+  width: 200px;
 }
 
 #demoVid {
@@ -728,7 +748,7 @@ Medium devices (640px and larger)
 
   #project h2 {
     font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
   }
 
@@ -746,6 +766,10 @@ Medium devices (640px and larger)
   }
 
   [class*="col-"].projGif img {
+    margin-right: 3em;
+  }
+
+  #biggestFinding img {
     margin-right: 3em;
   }
 
@@ -770,10 +794,7 @@ Medium devices (640px and larger)
 
   h1#workHero {
     line-height: 1.5em;
-  }
-
-  h1#workHero span {
-    font-size: .6em;
+    font-size: 2.75em;
   }
 
   h1#aboutHero {
@@ -795,7 +816,7 @@ Medium devices (640px and larger)
   #work h3 {
     font-size: 1.67em;
     padding: 0;
-    color: var(--av-gold);
+    text-shadow: 1px 2px 1px black;
   }
 
   #work p {
@@ -868,8 +889,8 @@ Medium devices (640px and larger)
 
   #project img {
     padding: 0.5em;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   #project .persona {
@@ -899,7 +920,7 @@ Large devices (1024px or larger)
   } */
 
   .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -909,7 +930,7 @@ Large devices (1024px or larger)
   }
 
   header {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
