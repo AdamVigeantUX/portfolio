@@ -538,7 +538,6 @@ h2 > span {
 #project img {
   padding: 1em;
   max-width: 300px;
-  max-height: 300px;
 }
 
 .projGif {
@@ -577,7 +576,6 @@ h2 > span {
 
 #about img {
   max-width: 500px;
-  max-height: 500px;
   padding: 1em;
 }
 
