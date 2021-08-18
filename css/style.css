@@ -450,6 +450,7 @@ div.row#hero {
   padding-bottom: 0;
   text-align: center;
   line-height: 2.4em;
+  text-decoration: underline var(--av-link);
 }
 
 #tools p {
@@ -615,7 +616,6 @@ a:active {
 #contents a {
   font-weight: 300;
   color: var(--av-link);
-  text-decoration: underline var(--av-link);
 }
 
 #contents a > strong {
