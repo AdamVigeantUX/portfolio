@@ -43,7 +43,7 @@ body {
   background-color: white;
 }
 
-data-fancybox {
+#project main div a {
   transition: none;
 }
 
