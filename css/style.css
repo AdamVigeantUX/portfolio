@@ -43,6 +43,10 @@ body {
   background-color: white;
 }
 
+data-fancybox {
+  transition: none;
+}
+
 [class*="col-"] {
   display: flex;
   flex-wrap: wrap;
