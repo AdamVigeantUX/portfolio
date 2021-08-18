@@ -58,7 +58,11 @@
           <li><a href="about.html">About</a></li>
           <li><a href="#contact" onclick="navClick()">Contact</a></li>
           <li>
-            <a href="files/cv.pdf#view=Fit" class="button" id="navCv" target="_blank"
+            <a
+              href="files/cv.pdf#view=Fit"
+              class="button"
+              id="navCv"
+              target="_blank"
               >CV</a
             >
           </li>
@@ -72,7 +76,7 @@
     <!-- Mobile Spacer -->
     <div id="mobileSpacer"></div>
 
-    <div class="bg">
+    <div class="bg" id="indexBg">
       <!-- Hero Section -->
       <div id="hero">
         <div class="container">
@@ -91,8 +95,8 @@
           </div>
           <!-- Project #1 -->
           <div class="section">
-            <div class="row">
-              <div class="column col-md-6" id="soulunits">
+            <div class="row" id="soulUnits">
+              <div class="column col-md-6">
                 <picture>
                   <a href="soul-units.html">
                     <source
@@ -109,14 +113,15 @@
               <div class="column col-md-6">
                 <h3>Soul Units App</h3>
                 <p>
-                  How a personal empowerment app was brought to life with Design Thinking.
+                  How a personal empowerment app was<br />brought to life with
+                  Design Thinking.
                 </p>
                 <a href="soul-units.html" class="button"> View Project </a>
               </div>
             </div>
             <!-- Project #2 -->
-            <div class="row">
-              <div class="column col-md-6" id="sapInc">
+            <div class="row" id="sapInc">
+              <div class="column col-md-6">
                 <picture>
                   <source
                     srcset="img/project-sap-inc/sap-inc-header.png"
@@ -130,7 +135,10 @@
               </div>
               <div class="column col-md-6">
                 <h3>Saponaro, Inc.</h3>
-                <p>How taking the time to understand the problem-space fixed a website</p>
+                <p>
+                  How taking the time to understand the<br />problem-space fixed a
+                  website
+                </p>
                 <a href="sap-inc.html" class="button"> View Project </a>
               </div>
             </div>
@@ -210,8 +218,9 @@
     	 M7.3,10.3c-1.9,0-3.4-1.5-3.4-3.4s1.5-3.4,3.4-3.4s3.4,1.5,3.4,3.4S9.1,10.3,7.3,10.3z M28.6,27.7c0,0.4-0.3,0.8-0.8,0.8H24
     	c-0.4,0-0.8-0.3-0.8-0.8v-7.1c0-1.1,0.3-4.6-2.7-4.6c-2.4,0-2.9,2.4-2.9,3.5v8.1c0,0.4-0.3,0.8-0.8,0.8h-3.7c-0.4,0-0.8-0.3-0.8-0.8
     	V12.5c0-0.4,0.3-0.8,0.8-0.8h3.7c0.4,0,0.8,0.3,0.8,0.8v1.3c0.9-1.3,2.2-2.3,5-2.3c6.2,0,6.1,5.8,6.1,8.9L28.6,27.7L28.6,27.7z"
-                    /></svg
-                ></a>
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -232,11 +241,7 @@
     <script>
       var hero = $("#heroText");
 
-      var arrAdj = [
-        "UX Designer",
-        "Design Thinker",
-        "Creative Problem Solver",
-      ];
+      var arrAdj = ["UX Designer", "Design Thinker", "Creative Problem Solver"];
 
       const setHeroText = (delayAmount, text) =>
         setTimeout(function () {
@@ -247,7 +252,6 @@
         let delay = (i + 1) * 2500;
         setHeroText(delay, i);
       }
-      
     </script>
   </body>
 </html>
