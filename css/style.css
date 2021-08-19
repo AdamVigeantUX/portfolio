@@ -350,7 +350,7 @@ p:last-of-type {
   padding-bottom: 1em;
 }
 
-#project p strong {
+p strong {
   font-weight: 600;
 }
 
@@ -373,10 +373,6 @@ h1#workHero {
   color: var(--av-green);
   -webkit-text-stroke: 1px white;
   text-shadow: 2px 4px var(--av-teal);
-}
-
-h1#aboutHero {
-  padding: 1em 0;
 }
 
 #hero span {
@@ -624,14 +620,28 @@ h2 > span {
 
 /* About */
 
+h1#aboutHero {
+  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  color: var(--av-green);
+  -webkit-text-stroke: 1px white;
+  text-shadow: 2px 4px var(--av-teal);
+  padding: 1.5em 0;
+}
+
 #about h2 {
   text-align: center;
   padding: 1em 0em 1em;
 }
 
-#about img {
-  max-width: 500px;
-  padding: 1em;
+#about h3 {
+ font-size: 1.5em;
+}
+
+#headshot img {
+  max-width: 200px;
+  border-radius: 10%;
 }
 
 #about p {
@@ -642,7 +652,7 @@ h2 > span {
 #uxTools,
 #softSkills {
   margin: 0;
-  padding-bottom: 0;
+  padding: 0 1em 0;
   font-size: 0.8em;
   text-align: center;
 }
@@ -907,6 +917,11 @@ Medium devices (640px and larger)
     padding: 1.5em 0;
   }
 
+  h1#aboutHero {
+    font-size: 3em;
+    padding: 1.5em 0;
+  }
+
   /*   h1#soulUnitsProjectHeader {
     border-style: solid;
     border-color: transparent;
@@ -922,10 +937,6 @@ Medium devices (640px and larger)
     border-top-color: rgb(0, 22, 39);
     border-bottom-color: rgb(0, 22, 39);
   } */
-
-  h1#aboutHero {
-    padding-bottom: 1.5em;
-  }
 
   /*   h1#workHero > strong:before {
     content: "Hey, ";
