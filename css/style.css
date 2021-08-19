@@ -1,15 +1,21 @@
-/* :root {
-  --av-teal: #006478;
-  --av-darkTeal: #005161;
-  --av-green: #3ca078;
-  --av-link: #3cc896;
-  --av-linkVisited: #1e533e;
-  --av-gold: #7e6529;
-  --av-footer: rgba(0, 0, 0, 0.9);
-  --av-bg: rgba(225, 225, 225, 0.9);
-} */
+/* Contents
 
-/* New Test */
+1. Color
+2. General
+  --Type
+  --Links
+  --Buttons
+3. Font
+4. Top Navigation
+5. Work Page
+6. Individual Projects
+7. About Page
+8. Links and Buttons
+9. Footer
+*/
+
+/* 1. Color */
+
 :root {
   --av-teal: #006478;
   --av-darkTeal: #005161;
@@ -23,22 +29,7 @@
   --av-textShadows: transparent;
 }
 
-/* Contents
-  General
-  --Type
-  --Links
-  --Buttons
-
-  Navigation
-
-  Work
-  Projects
-  About
-
-   Footer
-*/
-
-/* ---General--- */
+/* 2. General */
 
 * {
   box-sizing: border-box;
@@ -55,24 +46,6 @@ body {
   background-color: white;
 }
 
-#project main div a {
-  transition: none;
-}
-
-[class*="col-"] {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-}
-
-.section#foreword [class*="col-"] {
-  align-content: flex-start;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-
 .row {
   display: flex;
   justify-content: center;
@@ -86,22 +59,137 @@ body {
   display: table;
 }
 
+div.row.reverse {
+  flex-direction: column-reverse;
+}
+
+[class*="col-"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
 img {
   width: 100%;
 }
 
-/* --Work Page-- */
-
-#work .row {
-  padding: 22px 0 22px;
-  border-bottom: 1px solid lightgray;
+#mobileSpacer {
+  margin-top: 64px;
 }
 
-#work .row:last-of-type {
-  border-style: none;
+/* 3. Font */
+
+body {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: black;
 }
 
-/* --Navigation-- */
+h1,
+h2,
+h3,
+h4 {
+  width: 100%;
+  line-height: 1.2;
+  padding: 0.5em 0;
+}
+
+h1,
+h3 {
+  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+  color: var(--av-teal);
+  padding: 44px 0;
+}
+
+#hero h1 {
+  text-align: center;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  margin: 0;
+  padding: 0.5em 0 0.25em;
+  text-shadow: 1px 2px 1px var(--av-textShadows);
+}
+
+#hero span {
+  font-family: "acumin-pro", sans-serif;
+  display: block;
+  font-weight: 400;
+  font-size: 0.25em;
+  line-height: 1.4em;
+  color: var(--av-shadows);
+  text-align: center;
+  -webkit-text-stroke: 0px;
+  text-shadow: none;
+}
+
+h2 {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: gray;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 1.25em;
+  color: var(--av-teal);
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+p {
+  display: inline-block;
+  margin-right: auto;
+  padding-top: 0.25em;
+  padding-bottom: 0.5em;
+}
+
+p:last-of-type {
+  padding-bottom: 1em;
+}
+
+p strong {
+  font-weight: 600;
+}
+
+main ul,
+ol {
+  margin-left: 2em;
+  margin-right: auto;
+}
+
+main ol {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--av-gold);
+}
+
+main li {
+  padding-bottom: 0.4em;
+}
+
+main li span {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: black;
+}
+
+main ol > li:last-of-type {
+  padding-bottom: 1em;
+}
+
+/* 4. Top Navigation */
 
 header {
   display: flex;
@@ -112,12 +200,6 @@ header {
   width: 100%;
   margin: 0;
   background-color: var(--av-teal);
-}
-
-/* Mobile Hamburger */
-
-#mobileSpacer {
-  margin-top: 64px;
 }
 
 header a.icon {
@@ -187,26 +269,6 @@ a#logo > svg {
   }
 }
 
-/* @keyframes cycleText {
-  0% {
-    content: "UX Designer";
-  }
-  33% {
-    content: "Design Thinker";
-  }
-  67% {
-    content: "Creative Problem Solver";
-  }
-  100% {
-    content: "UX Designer";
-  }
-} */
-
-/* #heroText:after {
-  animation: 9s cycleText infinite ease-out;
-  content: "";
-} */
-
 .a-part {
   animation: 0.6s move-a 1 normal ease-out;
 }
@@ -226,32 +288,6 @@ nav {
   background-color: var(--av-darkTeal);
   border-radius: 10px 0 0 10px;
   padding: 22px 10px;
-}
-
-main ul,
-ol {
-  margin-left: 2em;
-  margin-right: auto;
-}
-
-main ol {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: var(--av-gold);
-}
-
-main li {
-  padding-bottom: 0.4em;
-}
-
-main li span {
-  font-size: 0.8em;
-  font-weight: normal;
-  color: black;
-}
-
-main ol > li:last-of-type {
-  padding-bottom: 1em;
 }
 
 nav > ul {
@@ -291,79 +327,19 @@ nav > ul > li > a:visited {
   color: white;
 }
 
-/* Font */
-body {
-  font-family: "acumin-pro", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  color: black;
-}
+/* 5. Work Page */
 
-h1,
-h2,
-h3,
-h4 {
-  width: 100%;
-  line-height: 1.2;
-  padding: 0.5em 0;
-}
-
-h1,
-h3 {
-  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 5em;
-  color: var(--av-teal);
-  padding: 44px 0;
-}
-
-h2 {
-  font-family: "acumin-pro", sans-serif;
-  font-weight: 400;
-  font-size: 2em;
-  color: gray;
-}
-
-h3 {
-  font-weight: 800;
-  font-size: 1.25em;
-  color: var(--av-teal);
-}
-
-h4 {
-  font-size: 1.1em;
-  font-weight: 600;
-}
-
-p {
-  display: inline-block;
-  margin-right: auto;
-  padding-top: 0.25em;
-  padding-bottom: 0.5em;
-}
-
-p:last-of-type {
-  padding-bottom: 1em;
-}
-
-p strong {
-  font-weight: 600;
-}
-
-#hero {
+#work {
   text-align: center;
 }
 
-#hero h1 {
-  font-family: "acumin-pro-extra-condensed", sans-serif;
-  margin: 0;
-  padding: 0.5em 0 0.25em;
-  /*   -webkit-text-stroke: 1px white; */
-  text-shadow: 1px 2px 1px var(--av-textShadows);
+#work .row {
+  padding: 22px 0 22px;
+  border-bottom: 1px solid lightgray;
+}
+
+#work .row:last-of-type {
+  border-style: none;
 }
 
 h1#workHero {
@@ -375,26 +351,10 @@ h1#workHero {
   text-shadow: 2px 4px var(--av-teal);
 }
 
-#hero span {
-  font-family: "acumin-pro", sans-serif;
-  display: block;
-  font-weight: 400;
-  font-size: 0.25em;
-  line-height: 1.4em;
-  color: var(--av-shadows);
-  text-align: center;
-  -webkit-text-stroke: 0px;
-  text-shadow: none;
-}
-
 #workHero span {
   color: var(--av-teal);
   font-size: 0.5em;
   line-height: 1.6em;
-}
-
-#work {
-  text-align: center;
 }
 
 #work h2 {
@@ -406,28 +366,15 @@ h1#workHero {
   font-weight: 700;
   font-size: 3em;
   padding: 0.5em 0 0;
-  /*  -webkit-text-stroke: 1px white */
   text-shadow: 1px 2px 1px var(--av-textShadows);
 }
 
 #work #soulUnits h3 {
   color: var(--av-teal);
-  /*     border-style: solid;
-    border-color: transparent;
-    border-width: 3px;
-    border-top-color: var(--av-green);
-    border-bottom-color: var(--av-green);
-    padding-bottom: .15em; */
 }
 
 #work #sapInc h3 {
   color: #d2694b;
-  /*   border-style: solid;
-    border-color: transparent;
-    border-width: 3px;
-    border-top-color: rgb(0, 22, 39);
-    border-bottom-color: rgb(0, 22, 39);
-    padding-bottom: .15em; */
 }
 
 #work p {
@@ -435,7 +382,8 @@ h1#workHero {
   padding: 0.5em 0 1em;
 }
 
-/* Projects */
+/* 6. Individual Projects */
+
 #soulUnitsProjectHeader {
   color: var(--av-teal);
 }
@@ -444,12 +392,14 @@ h1#sapIncProjectHeader {
   color: var(--av-gold);
 }
 
-main#project {
-  padding-bottom: 0;
+.section#foreword [class*="col-"] {
+  align-content: flex-start;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
-div.row.reverse {
-  flex-direction: column-reverse;
+main#project {
+  padding-bottom: 0;
 }
 
 div.row#hero {
@@ -487,10 +437,6 @@ div.row#hero {
 #contact .section {
   padding: 1em 0 2.5em;
 }
-
-/* .capFirst {
-  font-size: 1.25em;
-} */
 
 #contents {
   background-color: rgba(255, 255, 255, 0.5);
@@ -622,7 +568,7 @@ h2 > span {
   padding: 0 0 1em;
 }
 
-/* About */
+/* 7. About Page */
 
 h1#aboutHero {
   font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
@@ -640,7 +586,7 @@ h1#aboutHero {
 }
 
 #about h3 {
- font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 #headshot img {
@@ -666,7 +612,8 @@ h1#aboutHero {
   padding-top: 2em;
 }
 
-/* Links */
+/* 8. Links and Buttons */
+
 a {
   font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
   color: var(--av-link);
@@ -700,7 +647,6 @@ a:active {
   text-decoration: none;
 }
 
-/* Buttons */
 .button {
   display: inline-block;
   color: white;
@@ -726,12 +672,6 @@ a:active {
 .button:active {
   background-color: var(--av-link);
 }
-
-/* li a.listButton1 {
-  font-family: "acumin-pro", sans-serif;
-  margin: 0.8em;
-  padding: 8px 16px;
-} */
 
 li a.listButton2 {
   font-family: "acumin-pro", sans-serif;
@@ -801,18 +741,41 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  div.row.reverse {
-    flex-direction: row;
-  }
-
   .row > * {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
 
+  div.row.reverse {
+    flex-direction: row;
+  }
+
   .column {
     padding-left: 0.5em;
     padding-right: 0.5em;
+  }
+
+  .col-md-4 {
+    width: 33%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-8 {
+    width: 67%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .col-md-6#headshot {
+    width: 33%;
+  }
+  .col-md-6#mystory {
+    width: 67%;
   }
 
   #indexBg {
@@ -876,9 +839,10 @@ Medium devices (640px and larger)
     padding: 0 2em;
   }
 
-#userFlow h3, #userFlow p {
-  width: 100%;
-}
+  #userFlow h3,
+  #userFlow p {
+    width: 100%;
+  }
 
   #testFindings {
     padding: 0 2em 2em;
@@ -912,10 +876,6 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  /*   #hero {
-    background-color: lightgray;
-  } */
-
   #hero h1 {
     padding: 0.25em 0 0.5em;
   }
@@ -931,30 +891,6 @@ Medium devices (640px and larger)
     padding: 1.5em 0;
   }
 
-  /*   h1#soulUnitsProjectHeader {
-    border-style: solid;
-    border-color: transparent;
-    border-width: 8px;
-    border-top-color: var(--av-green);
-    border-bottom-color: var(--av-green);
-  }
-
-  h1#sapIncProjectHeader {
-    border-style: solid;
-    border-color: transparent;
-    border-width: 8px;
-    border-top-color: rgb(0, 22, 39);
-    border-bottom-color: rgb(0, 22, 39);
-  } */
-
-  /*   h1#workHero > strong:before {
-    content: "Hey, ";
-  }
-
-  h1#workHero > strong:after {
-    content: " Vigeant";
-  } */
-
   #heroImg {
     padding: 1em 10px 10px;
   }
@@ -966,29 +902,6 @@ Medium devices (640px and larger)
 
   #work p {
     font-size: 1em;
-  }
-
-  .col-md-4 {
-    width: 33%;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-8 {
-    width: 67%;
-  }
-
-  .col-md-12 {
-    width: 100%;
-  }
-
-  .col-md-6#headshot {
-    width: 33%;
-  }
-  .col-md-6#mystory {
-    width: 67%;
   }
 
   /* Change from Hamburger to Regular Nav */
@@ -1058,11 +971,7 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  /*   body {
-    font-size: 24px;
-  } */
-
-  .container {
+.container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -1084,13 +993,5 @@ Large devices (1024px or larger)
 
   #work p {
     font-size: 1.25em;
-  }
-
-  .col-lg-7 {
-    width: 58.33%;
-  }
-
-  .col-lg-5 {
-    width: 41.66%;
   }
 }
