@@ -754,12 +754,16 @@ footer {
 }
 
 #contact h2 {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
   color: var(--av-teal);
   margin-bottom: 0;
   padding: 33px 0 11px;
 }
 
 #contact p {
+  font-size: 1.25em;
   width: 100%;
 }
 
