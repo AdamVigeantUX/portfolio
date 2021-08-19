@@ -440,6 +440,10 @@ h1#workHero {
   color: var(--av-teal);
 }
 
+h1#sapIncProjectHeader {
+  color: var(--av-gold);
+}
+
 main#project {
   padding-bottom: 0;
 }
