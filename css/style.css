@@ -406,7 +406,7 @@ div.row#hero {
   padding-bottom: 1em;
 }
 
-#heroImg {
+.heroImg {
   padding: 0 10px;
   min-height: 400px;
 }
@@ -891,7 +891,7 @@ Medium devices (640px and larger)
     padding: 1.5em 0;
   }
 
-  #heroImg {
+  .heroImg {
     padding: 1em 10px 10px;
   }
 
@@ -902,6 +902,10 @@ Medium devices (640px and larger)
 
   #work p {
     font-size: 1em;
+  }
+
+  div.hidden {
+    opacity: 5%;
   }
 
   /* Change from Hamburger to Regular Nav */
@@ -971,7 +975,7 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-.container {
+  .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;

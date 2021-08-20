@@ -81,7 +81,7 @@
       <div id="hero">
         <div class="container">
           <h1 id="workHero">
-            <strong>Adam Vigeant</strong><span id="heroText">UX Designer</span>
+            <strong>Adam Vigeant</strong><span id="heroText">—</span>
           </h1>
         </div>
       </div>
@@ -136,8 +136,8 @@
               <div class="column col-md-6">
                 <h3>Saponaro, Inc.</h3>
                 <p>
-                  How taking the time to understand the<br />problem-space fixed a
-                  website
+                  How taking the time to understand the<br />problem-space fixed
+                  a website
                 </p>
                 <a href="sap-inc.html" class="button"> View Project </a>
               </div>
@@ -230,15 +230,15 @@
     <div class="row" id="copyright">
       <p>&copy Adam Vigeant 2021</p>
     </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
+    <!--     <script>
       var hero = $("#heroText");
 
       var arrAdj = ["UX Designer", "Design Thinker", "Creative Problem Solver"];
@@ -252,6 +252,6 @@
         let delay = (i + 1) * 2500;
         setHeroText(delay, i);
       }
-    </script>
+    </script> -->
   </body>
 </html>
