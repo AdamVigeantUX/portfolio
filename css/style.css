@@ -230,25 +230,29 @@ header a.icon > i.navOpened {
   justify-content: center;
   height: 100%;
   opacity: 100%;
-  padding: 10px 10px;
+  padding: 6px;
+  margin: 6px;
   color: white;
   line-height: 1.2em;
+  background-color: white;
+  border-radius: 50%;
 }
 
 a#logo > svg {
   height: 44px;
+  width: 44px;
 }
 
 .logo-a-color {
-  fill: var(--av-link);
-}
-
-.logo-eye-color {
   fill: var(--av-teal);
 }
 
+.logo-eye-color {
+  fill: var(--av-green);
+}
+
 .logo-v-color {
-  fill: var(--av-link);
+  fill: var(--av-green);
 }
 
 @keyframes move-a {
@@ -914,11 +918,13 @@ Medium devices (640px and larger)
   }
 
   #logo {
-    padding: 22px;
+    padding: 8px;
+    margin: 8px 0;
   }
 
   a#logo > svg {
     height: 64px;
+    width: 64px;
   }
 
   nav {

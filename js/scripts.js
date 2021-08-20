@@ -25,6 +25,9 @@ gsap.from("#sapInc", {y:25, opacity:0, duration:1.5, delay: 1, ease:"power3.out"
 /* Project Hero Image Reveal */
 gsap.from(".heroImg", {x:100, opacity:0, duration:1.5, delay:.25, ease:"power3.out"});
 
+/* Project Hero Image Reveal */
+gsap.from("#headshot", {x:-100, opacity:0, duration:1.5, delay:.25, ease:"power3.out"});
+
 /* Button Hover Effect */
 $(".button").mouseenter(function(){gsap.to(this, {y:-5});});
 $(".button").mouseleave(function(){gsap.to(this, {y:0});});
