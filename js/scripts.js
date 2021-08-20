@@ -28,3 +28,6 @@ gsap.from(".heroImg", {x:100, opacity:0, duration:1.5, delay:.25, ease:"power3.o
 /* Button Hover Effect */
 $(".button").mouseenter(function(){gsap.to(this, {y:-5});});
 $(".button").mouseleave(function(){gsap.to(this, {y:0});});
+
+$("#logo").mouseenter(function(){gsap.to(this, {y:-3, opacity:.8});});
+$("#logo").mouseleave(function(){gsap.to(this, {y:0, opacity:1});});
