@@ -16,7 +16,8 @@ console.log(`Let\'s go! This website\'s power level is over ${8999 + 1}!`);
 var tl = gsap.timeline();
 tl.to("#heroText", {text:"Design Thinker", duration: 1, delay:2});
 tl.to("#heroText", {text:"Creative Problem Solver", duration: 1, delay:3});
-tl.to("#heroText", {text:"UX Designer", duration: 2, delay:3});
+tl.to("#heroText", {text:"U", duration: .1, delay:3});
+tl.to("#heroText", {text:"UX Designer", duration: 3, ease:"power3.out"});
 
 /* Home Project Reveal */
 gsap.from("#soulUnits", {y:25, opacity:0, duration:1.5, delay: .5, ease:"power3.out"});
