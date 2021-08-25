@@ -34,6 +34,13 @@ gsap.from('#sapInc', {
   delay: 1,
   ease: 'power3.out'
 })
+gsap.from('#mySite', {
+  y: 25,
+  opacity: 0,
+  duration: 1.5,
+  delay: 2,
+  ease: 'power3.out'
+})
 
 /* Project Hero Image Reveal */
 gsap.from('.heroImg', {
