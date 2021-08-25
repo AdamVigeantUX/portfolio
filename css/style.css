@@ -19,12 +19,12 @@
 :root {
   --av-teal: #006478;
   --av-darkTeal: #005161;
-  --av-green: #3ca078;
-  --av-link: #3cc896;
-  --av-linkVisited: #1e533e;
+  --av-green: #06a77d;
+  --av-link: #06a77d;
+  --av-linkVisited: #023a2b;
   --av-gold: #d2694b;
   --av-footer: rgba(0, 0, 0, 0.9);
-  --av-bg: rgba(225, 225, 225, 0.9);
+  --av-bg: #ebebeb;
   --av-shadows: dimgray;
   --av-textShadows: transparent;
 }
@@ -35,10 +35,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: var(--av-bg);
 }
 
 .container {
@@ -53,7 +49,7 @@ body {
   width: 100%;
 }
 
-.row:after {
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -83,10 +79,11 @@ img {
 
 body {
   font-family: "acumin-pro", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   color: black;
+  background-color: var(--av-bg);
 }
 
 h1,
@@ -126,7 +123,7 @@ h1 {
   line-height: 1.4em;
   color: var(--av-shadows);
   text-align: center;
-  -webkit-text-stroke: 0px;
+  -webkit-text-stroke: 0;
   text-shadow: none;
 }
 
@@ -194,6 +191,7 @@ main ol > li:last-of-type {
 header {
   display: flex;
   position: fixed;
+  z-index: 1000;
   top: 0;
   justify-content: center;
   overflow: hidden;
@@ -230,8 +228,8 @@ header a.icon > i.navOpened {
   justify-content: center;
   height: 100%;
   opacity: 100%;
-  padding: 6px;
-  margin: 6px;
+  padding: 4px;
+  margin: 12px;
   color: white;
   line-height: 1.2em;
   background-color: white;
@@ -239,8 +237,8 @@ header a.icon > i.navOpened {
 }
 
 a#logo > svg {
-  height: 44px;
-  width: 44px;
+  height: 36px;
+  width: 36px;
 }
 
 .logo-a-color {
@@ -259,6 +257,7 @@ a#logo > svg {
   from {
     transform: translate(0, -100px);
   }
+
   to {
     transform: translate(0, 0);
   }
@@ -268,6 +267,7 @@ a#logo > svg {
   from {
     transform: translate(0, 100px);
   }
+
   to {
     transform: translate(0, 0);
   }
@@ -338,7 +338,7 @@ nav > ul > li > a:visited {
 }
 
 #work .row {
-  padding: 22px 0 22px;
+  padding: 22px 0;
   border-bottom: 1px solid lightgray;
 }
 
@@ -346,13 +346,13 @@ nav > ul > li > a:visited {
   border-style: none;
 }
 
-h1#workHero {
+h1#workHero,
+h1#aboutHero {
   font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+  font-weight: 800;
   padding: 1.5em 0 1em;
   font-size: 2em;
-  color: var(--av-green);
-  -webkit-text-stroke: 1px white;
-  text-shadow: 2px 4px var(--av-teal);
+  color: var(--av-gold);
 }
 
 #workHero span {
@@ -474,7 +474,7 @@ div.row#hero {
 #project h2 {
   font-weight: 700;
   color: var(--av-green);
-  padding: 2em 0em 2em;
+  padding: 2em 0;
   text-align: center;
   text-shadow: 0 2px var(--av-teal);
 }
@@ -488,12 +488,12 @@ h2 > span {
   font-weight: 300;
   font-size: 0.67em;
   color: var(--av-shadows);
-  -webkit-text-stroke: 0px;
+  -webkit-text-stroke: 0;
   text-shadow: none;
 }
 
 #project #prototype h2 {
-  padding: 2em 0em 1.5em;
+  padding: 2em 0 1.5em;
 }
 
 #contents h2 {
@@ -526,7 +526,7 @@ h2 > span {
 }
 
 #project h4 {
-  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
+  font-family: "acumin-pro", sans-serif;
   color: var(--av-teal);
 }
 
@@ -537,7 +537,6 @@ h2 > span {
 #project b {
   font-weight: 700;
   color: var(--av-green);
-  text-shadow: 0px 1px black;
 }
 
 #project img {
@@ -574,19 +573,9 @@ h2 > span {
 
 /* 7. About Page */
 
-h1#aboutHero {
-  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
-  font-weight: 800;
-  font-size: 2em;
-  color: var(--av-green);
-  -webkit-text-stroke: 1px white;
-  text-shadow: 2px 4px var(--av-teal);
-  padding: 1.5em 0;
-}
-
 #about h2 {
   text-align: center;
-  padding: 1em 0em 1em;
+  padding: 1em 0;
 }
 
 #about h3 {
@@ -607,7 +596,7 @@ h1#aboutHero {
 #uxTools,
 #softSkills {
   margin: 0;
-  padding: 0 1em 0;
+  padding: 0 1em;
   font-size: 0.8em;
   text-align: center;
 }
@@ -655,7 +644,6 @@ a:active {
   display: inline-block;
   color: white;
   background-color: var(--av-link);
-  text-shadow: 0px 2px var(--av-linkVisited);
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 16px;
@@ -712,7 +700,6 @@ footer {
 }
 
 #contact p {
-  font-size: 1.25em;
   width: 100%;
 }
 
@@ -778,6 +765,7 @@ Medium devices (640px and larger)
   .col-md-6#headshot {
     width: 33%;
   }
+
   .col-md-6#mystory {
     width: 67%;
   }
@@ -800,7 +788,6 @@ Medium devices (640px and larger)
 
   #work .row {
     background-color: white;
-    padding: 16px;
     border-radius: 16px;
     box-shadow: 2px 3px 5px dimgray;
     margin-bottom: 1em;
@@ -884,14 +871,10 @@ Medium devices (640px and larger)
     padding: 0.25em 0 0.5em;
   }
 
-  h1#workHero {
-    line-height: 1.5em;
-    font-size: 3em;
-    padding: 1.5em 0;
-  }
-
+  h1#workHero,
   h1#aboutHero {
-    font-size: 3em;
+    line-height: 1.5em;
+    font-size: 2em;
     padding: 1.5em 0;
   }
 
@@ -918,13 +901,13 @@ Medium devices (640px and larger)
   }
 
   #logo {
-    padding: 8px;
-    margin: 8px 0;
+    padding: 4px;
+    margin: 12px 0;
   }
 
   a#logo > svg {
-    height: 64px;
-    width: 64px;
+    height: 48px;
+    width: 48px;
   }
 
   nav {
