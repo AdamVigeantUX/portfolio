@@ -323,7 +323,8 @@ nav > ul > li.active > a {
 }
 
 nav > ul > li > a#navCv {
-  padding: 0 12px 6px;
+  font-size: 0.9em;
+  padding: 2px 12px 6px;
   border-bottom: none;
 }
 
@@ -381,6 +382,10 @@ h1#aboutHero {
   color: #d2694b;
 }
 
+#work #mySite h3 {
+  color: var(--av-green);
+}
+
 #work p {
   width: 100%;
   padding: 0.5em 0 1em;
@@ -394,6 +399,10 @@ h1#aboutHero {
 
 h1#sapIncProjectHeader {
   color: var(--av-gold);
+}
+
+h1#avSiteProjectHeader {
+  color: var(--av-green);
 }
 
 .section#foreword [class*="col-"] {
@@ -527,7 +536,11 @@ h2 > span {
 
 #project h4 {
   font-family: "acumin-pro", sans-serif;
-  color: var(--av-teal);
+  color: var(--av-gold);
+}
+
+#project h4.animations {
+  text-align: center;
 }
 
 #project h3 span {
@@ -627,7 +640,7 @@ a:active {
 
 #contents a {
   font-weight: 300;
-  color: var(--av-link);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 #contents a > strong {

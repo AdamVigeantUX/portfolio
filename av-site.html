@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/loa8egr.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="./img/av-design.ico" rel="shortcut icon" />
+    <!-- Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <title>Adam Vigeant UX</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html" id="logo">
+        <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In  -->
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="35.8px"
+          height="64px"
+          viewbox="0 0 35.8 64"
+          style="overflow: visible; enable-background: new 0 0 35.8 64"
+          xml:space="preserve"
+        >
+          <defs></defs>
+          <g class="a-part">
+            <path
+              class="logo-a-color"
+              d="M35.8,29.6L18.1,0.1C18,0,17.8,0,17.7,0.1L0.1,29.6c-0.1,0.2,0,0.4,0.2,0.4h35.3C35.8,30,35.9,29.8,35.8,29.6z
+ "
+            />
+            <polygon
+              class="logo-eye-color"
+              points="21.5,21.9 14.3,21.9 17.9,15.9 	"
+            />
+          </g>
+          <g class="v-part">
+            <path
+              class="logo-v-color"
+              d="M35.8,34.4L18.1,63.9c-0.1,0.2-0.3,0.2-0.4,0L0.1,34.4c-0.1-0.2,0-0.4,0.2-0.4h8.9c0.2,0,0.3,0.1,0.4,0.3
+ l8.3,13.8l8.3-13.8c0.1-0.1,0.3-0.3,0.4-0.3h8.9C35.8,34,35.9,34.2,35.8,34.4z"
+            />
+          </g>
+        </svg>
+      </a>
+      <nav id="links">
+        <ul>
+          <li class="active"><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="files/cv.pdf" class="button" id="navCv" target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="navClick()">
+        <i class="fa fa-bars fa-lg navClosed" id="hamIcon"></i>
+      </a>
+    </header>
+
+    <!-- Mobile Spacer -->
+    <div id="mobileSpacer"></div>
+    <div class="bg">
+      <!-- Hero Section -->
+      <div class="container row" id="hero">
+        <div class="column col-md-6" id="title">
+          <h1 id="avSiteProjectHeader">
+            AVigeant.com<span>A UX focused portfolio website.</span>
+          </h1>
+        </div>
+        <div class="column col-md-6 heroImg">
+          <picture>
+            <source srcset="img/home/av-site.png" media="(max-width:767px)" />
+            <img src="img/home/av-site.png" alt="Soul Units App" width="600" />
+          </picture>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="container row" id="contents">
+        <div>
+          <h2>Case Study Contents:</h2>
+          <ul>
+            <li>
+              <a href="#foreword"
+                >Foreword| <strong>Project Overview</strong></a
+              >
+            </li>
+            <li>
+              <a href="#ch1"
+                >Chapter 1| <strong>Creating the Structure </strong></a
+              >
+            </li>
+            <li>
+              <a href="#ch2"
+                >Chapter 2| <strong>Improving the Experience</strong></a
+              >
+            </li>
+            <li>
+              <a href="#ch3"
+                >Chapter 3| <strong>Don't Make Assumptions</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project -->
+      <main id="project">
+        <div class="container">
+          <!-- Foreword| Project Overview -->
+          <div class="section" id="foreword">
+            <!-- Heading -->
+            <div class="row">
+              <h2>
+                <span>Foreword</span><br />
+                Project Overview
+              </h2>
+            </div>
+            <!-- Section Content -->
+            <div class="row">
+              <p class="capFirst">
+                <strong
+                  >As a UX Designer, I needed a place to demonstrate my
+                  work.</strong
+                >
+              </p>
+              <p>
+                In the past, my portfolio was hosted on various template sites,
+                but now I wanted a place to call my own—an entirely custom site.
+              </p>
+            </div>
+            <div class="row">
+              <div class="column col-md-6">
+                <h3><i class="fa fa-times-circle fa-lg"></i> Challenge</h3>
+                <ul>
+                  <li>
+                    Create a website that could be curated to the content I
+                    wanted to add to it
+                  </li>
+                  <li>
+                    Design the site using UX principles for a great experience
+                  </li>
+                  <li>Learn some new skills in the process</li>
+                </ul>
+              </div>
+              <div class="column col-md-6">
+                <h3><i class="fa fa-check-circle fa-lg"></i> Result</h3>
+                <p>
+                  A custom portfolio site, developed with UX best practices, and
+                  animated using a powerful Javascript library.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column col-md-6">
+                <h3><i class="fa fa-clock-o fa-lg"></i> Time-frame</h3>
+                <p>From start to finish, this project took 1 month.</p>
+              </div>
+              <div class="column col-md-6" id="tools">
+                <h3><i class="fa fa-pencil fa-lg"></i> Tools</h3>
+                <p class="toolsSection">
+                  <strong>Text Editor:</strong>
+                </p>
+                <p>Visual Code Studios</p>
+                <p class="toolsSection"><strong>Coding Languages:</strong></p>
+                <p>HTML • CSS • Javascript</p>
+                <p class="toolsSection">
+                  <strong>Javascript Librarys:</strong>
+                </p>
+                <p>jQuery • GSAP​​​​​​​</p>
+              </div>
+            </div>
+          </div>
+          <!-- Chapter 1 -->
+          <div class="section" id="ch1">
+            <!-- Heading -->
+            <div class="row">
+              <h2>
+                <span>Chapter 1</span><br />
+                Creating the Structure
+              </h2>
+            </div>
+            <!-- Section Content -->
+            <div class="row">
+              <h3>Code It</h3>
+              <p class="capFirst">
+                Because the site would host a variety of projects, I wanted to
+                make sure it was fully customizable. For me, this meant coding
+                it from scratch with <b>HTML</b>, <b>CSS</b>, and
+                <b>JAVASCRIPT</b>.
+              </p>
+              <p>
+                I coded the site using <b>VISUAL CODE STUDIO</b>, using
+                <b>GITHUB</b> to save backups as I worked.
+              </p>
+            </div>
+            <div class="row">
+              <picture>
+                <source
+                  srcset="img/project-av-site/html-snip.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/project-av-site/html-snip.png"
+                  alt="HTML code for the home page"
+                />
+              </picture>
+            </div>
+            <div class="row">
+              <h3>Style It</h3>
+              <p>
+                After adding the content, I styled it with <b>CSS</b>, iterating
+                until it looked the way I liked.
+              </p>
+            </div>
+            <div class="row">
+              <picture>
+                <source
+                  srcset="img/project-av-site/add-css.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/project-av-site/add-css.png"
+                  alt="HTML code for the home page"
+                />
+              </picture>
+            </div>
+          </div>
+
+          <!-- Chapter 2 -->
+          <div class="section" id="ch2">
+            <!-- Heading -->
+            <div class="row">
+              <h2>
+                <span>Chapter 2</span><br />
+                Improving the User Experience<br />
+              </h2>
+            </div>
+            <!-- Section Content -->
+            <div class="row">
+              <h3>Responsive Sizing</h3>
+              <p class="capFirst">
+                It was important that using the site was an enjoyable experience
+                regardless of the device it was being accessed from. I took a
+                <b>MOBILE-FIRST DESIGN</b> approach, ensuring the site worked
+                well on smaller devices before deciding how it would adjust for
+                larger screen-sizes.
+              </p>
+            </div>
+            <div class="row">
+              <a
+                href="img/project-av-site/responsive.png"
+                data-fancybox
+                data-caption="Desktop and Mobile Views"
+              >
+                <picture>
+                  <source
+                    srcset="img/project-sap-inc/table.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-av-site/responsive.png"
+                    alt="Picture"
+                    width="300"
+                  />
+                </picture>
+              </a>
+            </div>
+            <div class="row">
+              <h3>Animation</h3>
+              <p class="capFirst">
+                I love web animation and the way it can bring life to a static
+                page.
+              </p>
+              <p>
+                I added animations throughout the site with <b>JAVASCRIPT</b> to
+                add some vitality to it's content.
+              </p>
+            </div>
+            <div class="row">
+              <h4 class="animations">Project Card Fade-In</h4>
+              <a
+                href="img/project-av-site/card-animation.gif"
+                data-fancybox
+                data-caption="Desktop and Mobile Views"
+              >
+                <picture>
+                  <source
+                    srcset="img/project-av-site/card-animation.gif"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-av-site/card-animation.gif"
+                    alt="Picture"
+                    width="300"
+                  />
+                </picture>
+              </a>
+            </div>
+            <div class="row">
+              <h4 class="animations"><br />Header Logo Animation</h4>
+              <a
+                href="img/project-av-site/logo-animation.gif"
+                data-fancybox
+                data-caption="Desktop and Mobile Views"
+              >
+                <picture>
+                  <source
+                    srcset="img/project-av-site/logo-animation.gif"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-av-site/logo-animation.gif"
+                    alt="Picture"
+                    width="300"
+                  />
+                </picture>
+              </a>
+            </div>
+          </div>
+          <!-- Chapter 5-->
+          <div class="section" id="ch5">
+            <!-- Heading -->
+            <div class="row">
+              <h2>
+                <span>Chapter 3</span><br />
+                Don't Make Assumptions
+              </h2>
+            </div>
+            <!-- Section Content -->
+            <div class="row">
+              <h3>User Testing</h3>
+              <p>
+                I'm a big fan of <b>USER TESTING</b>—it's such an enlightening
+                way to highlight areas of improvement in a design.
+              </p>
+              <p>
+                I had five professionals, working in tech-related jobs, use my
+                website to test it's usability.
+              </p>
+            </div>
+            <div class="row">
+              <a
+                href="img/project-av-site/zoom.png"
+                data-fancybox
+                data-caption="Desktop and Mobile Views"
+              >
+                <picture>
+                  <source
+                    srcset="img/project-av-site/zoom.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-av-site/zoom.png"
+                    alt="Picture"
+                    width="300"
+                  />
+                </picture>
+              </a>
+            </div>
+            <!--             <div class="row">
+              <div class="column col-md-8">
+                <h3>Test Results</h3>
+
+                <ul>
+                  <li>
+                    To ensure the link worked as intended and led to the correct
+                    page/content
+                  </li>
+
+                  <li>
+                    To compare how the new link displayed correctly at all
+                    screen-sizes, from mobile to desktop
+                  </li>
+
+                  <li>
+                    To test the link on various browsers and verify
+                    compatibility
+                  </li>
+                </ul>
+              </div>
+              <div class="column col-md-4">
+                <picture>
+                  <source
+                    srcset="img/project-sap-inc/checkmarks.svg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/project-sap-inc/checkmarks.svg"
+                    alt="Picture"
+                    width="300"
+                  />
+                </picture>
+              </div>
+            </div> -->
+            <div class="row">
+              <h3>Browser Compatibility</h3>
+              <p>
+                After fixing the problems that came up during user testing, I
+                checked the browser compatibility of the site's mobile and
+                desktop versions with Chrome, Edge, Firefox, and Safari.
+              </p>
+            </div>
+            <div class="row">
+              <p>AVigeant.com was cross-compatible and ready to launch!</p>
+            </div>
+          </div>
+          <!-- Epilogue 
+          <div class="section" id="epilogue">
+
+            <div>
+              <h2>
+                <span>Epilogue</span><br />
+                Conclusion
+              </h2>
+            </div>
+
+             <div class="row">
+              <p class="capFirst">
+                I greatly enjoyed putting this site together, and am grateful to finally have a place to show off my work!
+              </p>
+            </div>
+            <div class="row">
+              <h3><span>1.)</span> -</h3>
+              <p>
+                -
+              </p>
+            </div>
+            <div class="row">
+              <h3><span>2.)</span> -</h3>
+              <p>
+                -
+              </p>
+              <p>
+                -
+              </p>
+              <p>
+                -
+              </p>
+            </div>
+            <div class="row">
+              <h3>
+                <span>3.)</span> -
+              </h3>
+              <p>
+                -
+              </p>
+              <p>
+                -
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer id="contact">
+        <div class="container">
+          <div class="section">
+            <div class="row">
+              <h2>Talk to Me.</h2>
+            </div>
+            <div class="row">
+              <p>You can reach me through the following channels:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <a
+                  href="mailto:adamvigeantux@gmail.com"
+                  target="_blank"
+                  class="button"
+                >
+                  AdamVigeantUX@gmail.com
+                </a>
+              </div>
+              <div class="column" id="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/adam-vigeant/"
+                  target="_blank"
+                >
+                  <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In  -->
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="32px"
+                    height="32px"
+                    viewbox="0 0 32 32"
+                    style="overflow: visible; enable-background: new 0 0 32 32"
+                    xml:space="preserve"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: #0077b7;
+                      }
+                    </style>
+                    <defs></defs>
+                    <path
+                      class="st0"
+                      d="M29.1,0H2.9C1.3,0,0,1.3,0,2.9v26.2C0,30.7,1.3,32,2.9,32h26.2c1.6,0,2.9-1.3,2.9-2.9V2.9C32,1.3,30.7,0,29.1,0
+            z M9.9,27.6c0,0.5-0.4,0.8-0.8,0.8H5.5c-0.5,0-0.8-0.4-0.8-0.8v-15c0-0.5,0.4-0.8,0.8-0.8h3.6c0.5,0,0.8,0.4,0.8,0.8V27.6z
+M7.3,10.3c-1.9,0-3.4-1.5-3.4-3.4s1.5-3.4,3.4-3.4s3.4,1.5,3.4,3.4S9.1,10.3,7.3,10.3z M28.6,27.7c0,0.4-0.3,0.8-0.8,0.8H24
+            c-0.4,0-0.8-0.3-0.8-0.8v-7.1c0-1.1,0.3-4.6-2.7-4.6c-2.4,0-2.9,2.4-2.9,3.5v8.1c0,0.4-0.3,0.8-0.8,0.8h-3.7c-0.4,0-0.8-0.3-0.8-0.8
+            V12.5c0-0.4,0.3-0.8,0.8-0.8h3.7c0.4,0,0.8,0.3,0.8,0.8v1.3c0.9-1.3,2.2-2.3,5-2.3c6.2,0,6.1,5.8,6.1,8.9L28.6,27.7L28.6,27.7z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="row" id="copyright">
+      <p>&copy; Adam Vigeant 2021</p>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
