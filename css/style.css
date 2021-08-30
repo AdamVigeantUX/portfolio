@@ -112,7 +112,6 @@ h1 {
   font-family: "acumin-pro-extra-condensed", sans-serif;
   margin: 0;
   padding: 0.5em 0 0.25em;
-  text-shadow: 1px 2px 1px var(--av-textShadows);
 }
 
 #hero span {
@@ -123,8 +122,6 @@ h1 {
   line-height: 1.4em;
   color: var(--av-shadows);
   text-align: center;
-  -webkit-text-stroke: 0;
-  text-shadow: none;
 }
 
 h2 {
@@ -253,6 +250,7 @@ a#logo > svg {
   fill: var(--av-green);
 }
 
+/* CSS Animation
 @keyframes move-a {
   from {
     transform: translate(0, -100px);
@@ -279,7 +277,7 @@ a#logo > svg {
 
 .v-part {
   animation: 0.6s move-v 1 normal ease-out;
-}
+} */
 
 nav {
   display: none;
@@ -347,19 +345,34 @@ nav > ul > li > a:visited {
   border-style: none;
 }
 
-h1#workHero,
-h1#aboutHero {
-  font-family: "acumin-pro-wide", "acumin-pro", sans-serif;
-  font-weight: 800;
-  padding: 1.5em 0 1em;
+#aboutHero {
+  background-color: white;
+  margin: 0 auto;
+}
+
+#workHero > h1,
+#aboutHero > h1 {
+  font-family: "gravesend-sans", "acumin-pro", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 1.5em 0;
   font-size: 2em;
   color: var(--av-gold);
+  line-height: 0.6em;
 }
 
 #workHero span {
+  display: inline-block;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
   color: var(--av-teal);
-  font-size: 0.5em;
-  line-height: 1.6em;
+  font-size: 0.3em;
+  line-height: 0.6em;
+}
+
+#workHero [id*="adjSpacer"] {
+  color: var(--av-gold);
 }
 
 #work h2 {
@@ -596,13 +609,20 @@ h2 > span {
 }
 
 #headshot img {
-  max-width: 200px;
+  max-width: 250px;
   border-radius: 10%;
 }
 
 #about p {
-  font-size: 1.25em;
   padding-bottom: 0.5em;
+}
+
+#myStory ul {
+  font-size: 0.8em;
+}
+
+#hobbies, #cvButton {
+  padding-bottom: 2em;
 }
 
 #about #uxSkills,
@@ -612,10 +632,6 @@ h2 > span {
   padding: 0 1em;
   font-size: 0.8em;
   text-align: center;
-}
-
-#cvButton {
-  padding-top: 2em;
 }
 
 /* 8. Links and Buttons */
@@ -884,10 +900,10 @@ Medium devices (640px and larger)
     padding: 0.25em 0 0.5em;
   }
 
-  h1#workHero,
-  h1#aboutHero {
-    line-height: 1.5em;
-    font-size: 2em;
+  #workHero > h1,
+  #aboutHero > h1 {
+    font-size: 3em;
+    text-align: center;
     padding: 1.5em 0;
   }
 
@@ -943,6 +959,14 @@ Medium devices (640px and larger)
 
   nav > ul > li {
     margin: 10px 22px;
+  }
+
+  #about p {
+  font-size: 1.25em;
+  }
+
+  #myStory ul {
+    font-size: 1em;
   }
 
   /* Projects */
