@@ -534,14 +534,6 @@ h2 > span {
   flex-wrap: wrap;
 }
 
-#project .userTests p {
-  width: 100%;
-  font-size: 1.2em;
-  margin-left: auto;
-  text-align: center;
-  padding-bottom: 0.5em;
-}
-
 #project h3 {
   font-weight: 600;
   padding: 0.5em 0;
@@ -568,6 +560,10 @@ h2 > span {
 #project img {
   padding: 1em;
   max-width: 300px;
+}
+
+#project #bigFindImg {
+  margin-bottom: 2em;
 }
 
 .projGif {
@@ -730,6 +726,7 @@ footer {
 
 #contact p {
   width: 100%;
+  padding-bottom: 0;
 }
 
 #linkedin {
@@ -755,6 +752,24 @@ footer {
   margin: 0 auto;
   color: white;
   padding: 0;
+}
+
+#toTop {
+  display: none;
+  position: fixed;
+  font-size: 2em;
+  text-align: center;
+  color: var(--av-green);
+  z-index: 99;
+  bottom: 32px;
+  right: 32px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+  transition: 300ms opacity;
+}
+
+#toTop:hover {
+  opacity: 1;
 }
 
 /* ==============================
