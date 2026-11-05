@@ -618,7 +618,8 @@ h2 > span {
 }
 
 #hobbies, #cvButton {
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #about #uxSkills,
