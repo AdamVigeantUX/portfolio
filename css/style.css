@@ -631,6 +631,10 @@ h2 > span {
   text-align: center;
 }
 
+.skillBlock {
+  padding-bottom:1em;
+}
+
 /* 8. Links and Buttons */
 
 a {
